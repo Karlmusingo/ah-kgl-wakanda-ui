@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Nunito|Nunito+Sans");
+.button {
+  background: #f46036;
+  color: #fafafa;
+  padding: 4px 8px;
+  border: 1px solid rgba(244, 96, 54, 0.5);
+  border-radius: 4px;
+  font-family: 'nunito';
+  font-weight: 700;
+}
+
+.button-register, .button-login {
+  width: 300px;
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.button-register:hover, .button-login:hover {
+  color: #dadada;
+  text-decoration: none;
+  -webkit-box-shadow: 8px 10px 20px 15px rgba(46, 61, 73, 0.15);
+          box-shadow: 8px 10px 20px 15px rgba(46, 61, 73, 0.15);
+}
+
+h1, h2, h3, p, span {
+  font-family: 'Nunito Sans';
+}
+/*# sourceMappingURL=component.css.map */
