@@ -1,0 +1,473 @@
+#home-page{
+    margin: 0;
+	padding: 0;
+	background:#f5f5f5;
+	font-family: 'Open Sans', sans-serif;
+	$color: #fff;
+	a{
+        text-decoration: none;
+    }
+
+	header {
+        position:fixed;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: $color; 
+        padding: 5px 0;
+        z-index:10;
+	}
+
+	.left{
+        display: flex;
+        align-items:center;
+        padding: 8px;
+        padding-left:40px;
+        img {
+            width: 45px;
+            height: 40px;
+        }
+	}
+    #is-logged-in {
+        display: none;
+    }
+	.right{
+        display:flex;
+        align-items:center;
+        padding-right:40px;
+        .btn{
+            padding:7px 20px;
+            background-color:#F46036;
+            font-size:.7em;     
+            color:#fff;   
+            font-weight:600;
+            border-radius:2px;
+            box-shadow: 0 2px 5px rgba(0,0,0,.12);
+            align-self: center;
+            margin-right:30px;
+        }
+        .overlay {
+            background: #fff;
+            color:#F46036;
+            border: 1px solid #F46036;
+        }
+        .drop-down-menu{
+            width:180px;
+            position:fixed;
+            top:70px;
+            right:50px;
+            background-color:#fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,.12);
+            border-radius:3px;
+            
+            div{
+                padding:15px 20px;
+                span{
+                    margin-left:20px;
+                    font-weight:300;
+                }
+                &:hover{
+                    cursor:pointer;
+                    background:#f4f6f9;
+                }
+            }
+        }
+        .user{
+            display:flex;
+            align-self: center;
+            align-items:center;
+            margin: 0 20px;
+            &:hover{
+                    cursor:pointer;
+            }
+            .avatar{
+                width:40px;
+                height:40px;
+                border-radius:50%;
+                margin-right:15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,.12);
+                background-image:url('../images/man.jpg');
+                background-size: cover;
+            }
+            .username{
+                font-weight:300;
+                font-size:.9em;
+                color:#333;
+            }
+            .drop-down{
+                margin-top:5px;
+                margin-left:15px;
+                i{
+                    color:#666;
+                }
+            }
+        }
+    }
+    .search {
+        display: flex;
+        flex-direction: row;
+        width:40%;
+        position: relative;
+        input {
+            padding:5px 15px;
+            height:25px;
+            width:100%;
+            align-self: center;
+            border:0px solid rgba(0,0,0,.1);
+            background: #f5f5f5;
+            outline: none;
+            border-radius:3px;
+            font-size:.9em;
+            font-weight:300;
+        }
+        i {
+            position: absolute;
+            right: 15px;
+            bottom: 20px;
+            color: #666;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .right {
+            display: none;
+        }
+        .search{
+            width: 65%;
+        }
+    }
+
+    .top{
+        padding-top:60px;
+        font-family: 'Playfair Display', serif;
+        .btn{
+            font-family: Roboto, sans-serif;
+            padding:12px 20px;
+            background-color:#F46036;
+            font-size:.9em;     
+            color:#fff;   
+            font-weight:600;
+            border-radius:2px;
+            box-shadow: 0 2px 5px rgba(0,0,0,.12);
+            align-self: center;
+            margin-right:30px;
+        }
+        .landing{
+            display:flex;
+            justify-content: space-between;
+            padding:80px 0 40px 20px;
+            padding-left:10px;
+            background:#fff;
+            .left{
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                .title{
+                    font-size:45px;
+                    font-weight:700;
+                    padding-bottom:40px;
+                }
+                .description{
+                    font-size:25px;
+                    font-weight:400;
+                    padding-bottom:50px;
+                    color:#333;
+                }
+                .action{
+                    display:flex;
+                    .overlay{
+                        background: #fff;
+                        color:#F46036;
+                        border: 1px solid #F46036;
+                    }
+                }
+            }
+            .right{
+                width:670px;
+                height:390px;
+                background-image: url('../img/illustration.svg');
+                background-size: cover;
+            }
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .top{
+            .landing{
+                padding: 40px 20px 30px;
+                text-align:center;
+                flex-direction:column;
+                .right{
+                    display:none;
+                }
+                .left{
+                    padding:0;
+                    .action{
+                        width:100%;
+                        justify-content: space-between;
+                        .btn{margin:0}
+                    }
+                }
+            }
+        }
+    }
+
+    .articles{
+        display: flex;
+        justify-content: space-between;
+        padding:10px;
+
+        .left{
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width:55%;
+            .navigation{
+                position:relative;
+                display:none;
+                padding:15px 20px;
+                margin: 10px 0 25px;
+                background:#fff;
+                align-self: stretch;
+                .item{
+                    margin-right:30px;
+                    color:#222;
+                    font-size:1.1em;
+                    font-weight:800;
+                    &:hover{
+                        color:#F46036;
+                    }
+                    .active{
+                        color:#F46036;
+                    }
+                }
+                .bar{
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    width:5px;
+                    height:100%;
+                    background: #F46036;
+                }
+            }
+            .article{
+                font-family: 'Playfair Display', serif;
+                display:flex;
+                justify-content: space-between;
+                background-color:#fff;
+                margin-bottom:30px;
+                .image{
+                    display:flex;
+                    min-width:45%;
+                    background-image: url('../img/card-image.jpg');
+                    background-size: cover;
+                }
+                .info{
+                    display:flex;
+                    flex-direction: column;
+                    padding:20px;
+                    .title{
+                        padding-bottom:20px;
+                        font-size: 1.5em;
+                        font-weight:700;
+                    }
+                    .description{
+                        padding-bottom:10px;
+                        font-size: 1.2em;
+                        font-weight:300;
+                        color:#333;
+                    }
+                    .options{
+                        display:flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items:flex-end;
+                        padding-top:20px;
+                        .left{
+                            padding:0;
+                            display:flex;
+                            flex-direction: row;
+                            .option{
+                                margin-right:20px;
+                                font-size:.8em;
+                                color:#444;
+                                i{
+                                    margin-right:10px;
+                                }
+                            }
+                        }
+                        .right{
+                            padding:0;
+                            .rating{
+                                display:flex;
+                                i{
+                                margin-left:10px;
+                                color:#F46036;
+                                font-size:.8em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cards{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .article{
+                    font-family: 'Playfair Display', serif;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    background-color:#fff;
+                    margin-bottom:30px;
+                    width: 48%;
+                    .image{
+                        display:flex;
+                        min-width:45%;
+                        height: 200px;
+                        background-image: url('../img/card-image.jpg');
+                        background-size: cover;
+                    }
+                    .info{
+                        display:flex;
+                        flex-direction: column;
+                        padding:20px;
+                        .title{
+                            padding-bottom:20px;
+                            font-size: 1.5em;
+                            font-weight:700;
+                        }
+                        .description{
+                            padding-bottom:10px;
+                            font-size: 1.2em;
+                            font-weight:300;
+                            color:#333;
+                        }
+                        .options{
+                            display:flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items:flex-end;
+                            padding-top:20px;
+                            .left{
+                                padding:0;
+                                display:flex;
+                                flex-direction: row;
+                                .option{
+                                    margin-right:20px;
+                                    font-size:.8em;
+                                    color:#444;
+                                    i{
+                                        margin-right:10px;
+                                    }
+                                }
+                            }
+                            .right{
+                                padding:0;
+                                .rating{
+                                    display:flex;
+                                    i{
+                                    margin-left:10px;
+                                    color:#F46036;
+                                    font-size:.8em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 37%;
+            align-items: flex-start; 
+            .trending{
+                padding-top: 10px;
+            }
+            .article{
+                font-family: 'Playfair Display', serif;
+                display:flex;
+                justify-content: space-between;
+                background-color:#fff;
+                margin-bottom: 20px;    
+                .image{
+                    display:flex;
+                    min-width:30%;
+                    background-image: url('../img/card-image.jpg');
+                    background-size: cover;
+                }
+                .info{
+                    display:flex;
+                    flex-direction: column;
+                    padding:20px;
+                    .title{
+                        padding-bottom:20px;
+                        font-size: 1em;
+                        font-weight:700;
+                    }
+                    .description{
+                        padding-bottom:5px;
+                        font-size: .95em;
+                        font-weight:300;
+                        color:#333;
+                    }
+                    .options{
+                        display:flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items:flex-end;
+                        padding-top:20px;
+                        .left{
+                            padding:0;
+                            display:flex;
+                            flex-direction: row;
+                            .option{
+                                margin-right:30px;
+                                font-size:.5em;
+                                color:#444;
+                                i{
+                                    margin-right:10px;
+                                }
+                            }
+                        }
+                        .right{
+                            padding:0;
+                            .rating{
+                                display:flex;
+                                i{
+                                margin-left:10px;
+                                color:#F46036;
+                                font-size:.8em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+
+        @media only screen and (max-width: 600px) {
+            .trends{
+                display:none;
+            }
+            .articles{
+                .left{
+                    .navigation{
+                        display:none;
+                    }
+                }
+            }
+            .article{
+                width:100%;
+            }
+        }
+
+
+    }
+
+}
