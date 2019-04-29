@@ -1,0 +1,92 @@
+@import './shared/component.scss';
+#view-article{
+	margin: 0;
+	padding: 0;
+	background: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	a{
+			text-decoration: none;
+	}
+
+	.p-avatar {
+		display:flex;
+		justify-content:center;
+		align-items: center;
+		width:90px;
+		height:90px;
+		border-radius: 50%;
+		border: 2px solid #F46036; 
+		.avatar{
+			width:80px;
+			height:80px;
+			border-radius:50%;
+			box-shadow: 0 2px 5px rgba(0,0,0,.12);
+			background-image:url('../images/man.jpg');
+			background-size: cover;
+		}
+	}
+
+	.name{
+		font-weight:400;
+		font-size:1em;
+		padding-bottom: 2px;
+		color:#000;
+	}
+
+	.username{
+			font-weight:300;
+			font-size:.9em;
+			color:#333;
+	}
+
+	.follow{
+		margin-top: 20px;
+		padding: 5px;
+		width: 80px;
+		background: #EFEFEF;
+		border: 0;
+		font-weight:300;
+		font-size:.8em;
+	}
+
+	.rate{
+		color: $color-primary;
+	}
+
+	.form-box{
+    background: white;
+		border:1px solid grey;
+		height: 300px;
+    form{
+      margin-top: 1rem;
+      label{
+        display: block;
+        color: #555;
+        font-family: 'Nunito Sans', sans-serif;
+      }
+      textarea{
+        border: 2px solid #efefef;
+				width: 100%;
+        margin-bottom: 10px;
+        padding: 0 6px;
+      }
+
+			.btn{
+				padding:7px 50px;
+				background-color:#F46036;
+				font-size:.9em;     
+				color:#fff;   
+				font-weight:600;
+				border-radius:2px;
+				box-shadow: 0 2px 5px rgba(0,0,0,.12);
+				align-self: center;
+				float: right;
+			}
+      .input:focus {
+        outline: none !important;
+        border: 2px solid rgba($color-primary, 0.5);
+        box-shadow: 2px 0 6px rgba($color-primary, 0.8);
+    	}
+    }
+  }
+}
