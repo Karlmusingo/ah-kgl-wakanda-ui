@@ -129,11 +129,18 @@
     }
 
     @media only screen and (max-width: 600px) {
+        header{
+            justify-content:flex-start;
+        }
         .right {
             display: none;
         }
         .search{
-            width: 65%;
+            width: 50%;
+            margin-left:60px;
+        }
+        #large-article{
+            display:none;
         }
     }
 
@@ -211,7 +218,13 @@
             }
         }
     }
-
+    @media only screen and (max-width: 600px){
+        .top{
+            .btn{
+                font-size: 0.7em;
+            }
+        }
+    }
     .articles{
         display: flex;
         justify-content: space-between;
@@ -224,7 +237,6 @@
             width:55%;
             .navigation{
                 position:relative;
-                display:none;
                 padding:15px 20px;
                 margin: 10px 0 25px;
                 background:#fff;
@@ -451,12 +463,19 @@
             }  
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 1024px) {
             .trends{
                 display:none;
             }
+            .left{
+                width:100%;
+                justify-content:center;
+                padding-left:8px;
+            }
             .articles{
+                flex-direction: column;
                 .left{
+                    width:100%;
                     .navigation{
                         display:none;
                     }
@@ -465,9 +484,63 @@
             .article{
                 width:100%;
             }
+            .most{
+                .cards {
+                    width: 100%;
+                    .article{
+                         width:99%;
+                         .image{
+                             height:350px;
+                         }
+                         .info{
+                             .options{
+                                 align-items:center;
+                                 .left{
+                                     width:auto;
+                                 }
+                                 .right{
+                                     align-items:flex-end;
+                                    .rating{
+                                         i {
+                                            font-size: 0.6em;
+                                         }
+                                         
+                                     }
+                                 }
+                                
+                             }
+                         }
+                     } 
+                 }
+            }
         }
 
-
+        @media only screen and (max-width: 600px) {
+            .most{
+                .cards {
+                    .article{
+                         .image{
+                             height:210px;
+                         }
+                     } 
+                 }
+            }
+            .articles{
+                .left{
+                    .navigation {
+                        display: none;
+                    }
+                }
+            } 
+        }
     }
-
+    @media only screen and (max-width: 600px) {
+        .articles{
+            .left{
+                .navigation{
+                    display: none;
+                }
+            }
+        }
+    }
 }
