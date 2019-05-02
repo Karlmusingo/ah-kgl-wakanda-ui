@@ -1160,6 +1160,9 @@ a, h1, h2, h3, p, span {
 
 #single-article .article-body .body-text {
   padding: 3.5rem 2rem; }
+  #single-article .article-body .body-text hr {
+    margin-top: -12px;
+    margin-bottom: 60px; }
   #single-article .article-body .body-text p {
     font-family: 'Playfair Display', serif;
     color: #666;
@@ -1183,6 +1186,26 @@ a, h1, h2, h3, p, span {
       color: #666;
       padding: 4px 12px;
       font-size: 13px; }
+    #single-article .article-body .body-text .article-info .article-details .rating {
+      display: flex;
+      margin-top: 20px;
+      margin-left: 50px; }
+      #single-article .article-body .body-text .article-info .article-details .rating i {
+        margin-left: 10px;
+        color: #F46036;
+        font-size: .9em; }
+    #single-article .article-body .body-text .article-info .article-details .option {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-top: 35px;
+      margin-right: 20px;
+      font-size: 1.4em;
+      color: #444; }
+      #single-article .article-body .body-text .article-info .article-details .option .digit {
+        font-size: .8em;
+        margin-left: 2px; }
 
 #single-article .author-details {
   display: flex;
@@ -1200,6 +1223,236 @@ a, h1, h2, h3, p, span {
       font-size: 20px; }
     #single-article .author-details .names h6 {
       color: #666; }
+
+#single-article .comment-card {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100%; }
+  #single-article .comment-card .author-details-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%; }
+    #single-article .comment-card .author-details-column img {
+      width: 96px;
+      height: 96px;
+      border-radius: 48px;
+      border: 2px solid #f46036; }
+    #single-article .comment-card .author-details-column .names {
+      padding: 1rem;
+      font-family: nunito; }
+      #single-article .comment-card .author-details-column .names h4 {
+        font-size: 15px; }
+      #single-article .comment-card .author-details-column .names h6 {
+        color: #666;
+        font-size: 14px; }
+  #single-article .comment-card .comments {
+    font-family: 'Playfair Display', serif;
+    color: #666;
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: justify; }
+
+#single-article .article {
+  border: 1px #d1cece solid;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-left: 14px;
+  margin-bottom: 30px;
+  width: 48%; }
+  #single-article .article .image {
+    display: flex;
+    min-width: 45%;
+    height: 180px;
+    background-image: url("../images/img-article.png");
+    background-size: cover; }
+  #single-article .article .info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+    #single-article .article .info .title {
+      padding-bottom: 20px;
+      font-size: 1em;
+      font-weight: 700; }
+    #single-article .article .info .options {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-top: 8px; }
+      #single-article .article .info .options .left {
+        padding: 0;
+        display: flex;
+        flex-direction: row; }
+        #single-article .article .info .options .left .option {
+          margin-right: 20px;
+          font-size: .8em;
+          color: #444; }
+          #single-article .article .info .options .left .option i {
+            margin-right: 10px; }
+      #single-article .article .info .options .right {
+        padding: 0; }
+        #single-article .article .info .options .right .rating {
+          display: flex; }
+          #single-article .article .info .options .right .rating i {
+            margin-left: 10px;
+            color: #F46036;
+            font-size: .8em; }
+
+#single-article .form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1rem;
+  margin-left: 13px;
+  margin-bottom: 30px; }
+  #single-article .form label {
+    display: block;
+    color: #555;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em; }
+  #single-article .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #efefef;
+    height: 180px;
+    margin-bottom: 10px;
+    padding: 0 6px; }
+  #single-article .form button {
+    align-self: flex-end;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    padding: 10px 40px;
+    background-color: #F46036;
+    font-size: .9em;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px; }
+
+@media only screen and (max-width: 527px) {
+  #single-article .body-sidebar {
+    display: none; }
+  #single-article .article-body {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 35%; }
+  #single-article .title {
+    margin-top: 30px; }
+    #single-article .title h1 {
+      color: black !important;
+      font-size: 2.5em !important; }
+  #single-article .article {
+    width: 100%;
+    margin: 10px; }
+  #single-article .form {
+    margin: 10px; }
+  #single-article .comments {
+    font-size: 1em !important; }
+  #single-article .article-info {
+    flex-wrap: wrap;
+    padding: 3rem 4rem !important; }
+  #single-article .author-details .rating {
+    padding: 0 auto; }
+  #single-article .article-details .numbers {
+    display: flex;
+    flex-direction: row;
+    padding: 0 auto; } }
+
+@media only screen and (min-width: 528px) and (max-width: 679.98px) {
+  #single-article .body-sidebar {
+    display: none; }
+  #single-article .article-body {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 30%; }
+  #single-article .title {
+    margin-top: 30px; }
+    #single-article .title h1 {
+      color: black !important; }
+  #single-article .article {
+    width: 100%;
+    margin: 10px; }
+  #single-article .form {
+    margin: 10px; }
+  #single-article .comments {
+    font-size: 1em !important; }
+  #single-article .article-info {
+    flex-wrap: wrap;
+    padding: 3rem 4rem !important; }
+  #single-article .author-details .rating {
+    padding: 0 auto; }
+  #single-article .article-details .numbers {
+    display: flex;
+    flex-direction: row;
+    padding: 0 auto; } }
+
+@media only screen and (min-width: 680px) and (max-width: 767.98px) {
+  #single-article .body-sidebar {
+    display: none; }
+  #single-article .article-body {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 18%; }
+  #single-article .title {
+    margin-top: 30px; }
+    #single-article .title h1 {
+      color: black !important; }
+  #single-article .article {
+    width: 100%;
+    margin: 10px; }
+  #single-article .form {
+    margin: 10px; }
+  #single-article .comments {
+    font-size: 1em !important; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  #single-article .body-sidebar {
+    display: none; }
+  #single-article .article-body {
+    justify-content: center; }
+  #single-article .title {
+    margin-top: 30px; }
+    #single-article .title h1 {
+      color: #fff !important; }
+  #single-article .article {
+    width: 100%;
+    margin: 10px; }
+  #single-article .form {
+    margin: 10px; }
+  #single-article .comments {
+    font-size: 1em !important; }
+  #single-article .article-info {
+    flex-wrap: wrap;
+    padding: 3rem 4rem !important; }
+  #single-article .author-details .rating {
+    padding: 0 auto; }
+  #single-article .article-details .numbers {
+    display: flex;
+    flex-direction: row;
+    padding: 0 auto; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  #single-article .body-sidebar {
+    display: none; }
+  #single-article .article-body {
+    justify-content: center; }
+  #single-article .title {
+    margin-top: 30px; }
+    #single-article .title h1 {
+      color: #fff !important; }
+  #single-article .article {
+    width: 100%;
+    margin: 10px; }
+  #single-article .form {
+    margin: 10px; }
+  #single-article .comments {
+    font-size: 1em !important; } }
 
 #home-page {
   margin: 0;
