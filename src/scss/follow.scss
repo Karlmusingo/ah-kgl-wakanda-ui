@@ -262,15 +262,16 @@
                         flex-direction: column;
                         padding-left:15px;
                         .img{
-                            width:150px;
-                            height:150px;
-                            background-image: url('../img/card-image.jpg');
-                            background-size: cover;
+                            width:90px;
+                            height:90px;
+                            background-image: url('../img/a_girl.jpeg');
+							background-size: cover;
+							border-radius: 50%;
                         }
                         .options{
                             width:100%;
                             font-size: .85em;
-                            padding:5px 0;
+                            padding:5px 5px 0px 0px;
                             display:flex;
                             justify-content:space-between;
                             
@@ -334,8 +335,56 @@
 			}
     }
     
+	.tab1{
+		padding-top: 1rem;
+		button{
+			color: #666;
+			font-weight: 800;
+			font-family: 'Nunito';
+			&:hover{
+				color: #F46036;
+			}
+		}
+		
+		.active{
+			border-bottom: 2px solid $color-primary;
+			color: $color-primary;
+		}
+	}
+
+	.btn-unfollow{
+		background: $color-dark-secondary !important; 
+	}
+
+	.tab1 {
+		width: 100%;
+		margin:4.5% 0% 0% 0%;
+		overflow: hidden;
+		background:#f4f6f9;
+		position: fixed;
+	}
+
+	.tab1 button {
+		background-color: inherit;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+		font-size: 17px;
+	}
 
 
+	.tabcontent {
+		margin-top: 10%;
+		padding: 6px 12px;
+		border-top: none;
+	}
+
+	@media only screen and (max-width: 1000px) {
+		
+	}
 
 
 }

@@ -226,14 +226,15 @@ a, h1, h2, h3, p, span {
           flex-direction: column;
           padding-left: 15px; }
           #follow .wrapper .users .user .left .img {
-            width: 150px;
-            height: 150px;
-            background-image: url("../img/card-image.jpg");
-            background-size: cover; }
+            width: 90px;
+            height: 90px;
+            background-image: url("../img/a_girl.jpeg");
+            background-size: cover;
+            border-radius: 50%; }
           #follow .wrapper .users .user .left .options {
             width: 100%;
             font-size: .85em;
-            padding: 5px 0;
+            padding: 5px 5px 0px 0px;
             display: flex;
             justify-content: space-between; }
             #follow .wrapper .users .user .left .options div {
@@ -276,3 +277,38 @@ a, h1, h2, h3, p, span {
   @media only screen and (max-width: 1000px) {
     #follow nav {
       display: none; } }
+  #follow .tab1 {
+    padding-top: 1rem; }
+    #follow .tab1 button {
+      color: #666;
+      font-weight: 800;
+      font-family: 'Nunito'; }
+      #follow .tab1 button:hover {
+        color: #F46036; }
+    #follow .tab1 .active {
+      border-bottom: 2px solid #f46036;
+      color: #f46036; }
+  #follow .btn-unfollow {
+    background: #564256 !important; }
+  #follow .tab1 {
+    width: 100%;
+    margin: 4.5% 0% 0% 0%;
+    overflow: hidden;
+    background: #f4f6f9;
+    position: fixed; }
+  #follow .tab1 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px; }
+  #follow .tabcontent {
+    margin-top: 10%;
+    padding: 6px 12px;
+    border-top: none; }
+  @media only screen and (max-width: 1000px) {
+    #follow .wrapper {
+      width: 100%; } }

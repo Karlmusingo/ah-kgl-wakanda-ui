@@ -8,10 +8,12 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Profile</title>
+
+
+    <title>User Follows</title>
 </head>
 
-<body id="follow">
+<body id="follow" onload="followUnfollow('btn')">
     <header class="row">
         <a href="#" class="left ">
             <img src="./images/logo_ah_2.png" alt="">
@@ -93,347 +95,685 @@
     </nav>
 
     <div class="wrapper">
-        <div class="tabs">
-            <div class="tab">Following <span>(56)</span></div>
-            <div class="tab">Followers <span>(252)</span></div>
+        <div class="tab1">
+            <button class="tablinks active" onclick="openTab(event, 'Following')">Following</button>
+            <button class="tablinks" onclick="openTab(event, 'Followers')">Followers</button>
         </div>
 
-        <div class="users">
-            <div class="user">
-                <div class="left">
-                    <div class="img"></div>
-                    <div class="username">@JohnDoe</div>
-                    <div class="options">
-                        <div>
-                            <span>243</span>
-                            <span>followers</span>
+        <div id="Following" class="tabcontent ">
+            <div class="users">
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
                         </div>
+                    </div>
+                    <div class="right">
                         <div>
-                            <span>243</span>
-                            <span>articles</span>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="right">
-                    <div>
-                        <div class="title">Biography</div>
-                        <div class="bio">
-                            am a engineer Fusce auctor nisljaki
-                            I am a engineer Fusce auctor nisljaki
-                            tellus interdum, sit amet elementum
-                            ma maecenas nibh libero, ultrices
-                            am a engineer Fusce auctor nisljaki
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="btn-wrapper">
-                        <div class="btn">
-                            Follow
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
             </div>
-            <div class="user">
-                <div class="left">
-                    <div class="img"></div>
-                    <div class="username">@JohnDoe</div>
-                    <div class="options">
-                        <div>
-                            <span>243</span>
-                            <span>followers</span>
-                        </div>
-                        <div>
-                            <span>243</span>
-                            <span>articles</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <div>
-                        <div class="title">Biography</div>
-                        <div class="bio">
-                            am a engineer Fusce auctor nisljaki
-                            I am a engineer Fusce auctor nisljaki
-                            tellus interdum, sit amet elementum
-                            ma maecenas nibh libero, ultrices
-                            am a engineer Fusce auctor nisljaki
-                        </div>
-                    </div>
-                    <div class="btn-wrapper">
-                        <div class="btn">
-                            Follow
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="user">
-                <div class="left">
-                    <div class="img"></div>
-                    <div class="username">@JohnDoe</div>
-                    <div class="options">
-                        <div>
-                            <span>243</span>
-                            <span>followers</span>
-                        </div>
-                        <div>
-                            <span>243</span>
-                            <span>articles</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <div>
-                        <div class="title">Biography</div>
-                        <div class="bio">
-                            am a engineer Fusce auctor nisljaki
-                            I am a engineer Fusce auctor nisljaki
-                            tellus interdum, sit amet elementum
-                            ma maecenas nibh libero, ultrices
-                            am a engineer Fusce auctor nisljaki
-                        </div>
-                    </div>
-                    <div class="btn-wrapper">
-                        <div class="btn">
-                            Follow
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="user">
-                <div class="left">
-                    <div class="img"></div>
-                    <div class="username">@JohnDoe</div>
-                    <div class="options">
-                        <div>
-                            <span>243</span>
-                            <span>followers</span>
-                        </div>
-                        <div>
-                            <span>243</span>
-                            <span>articles</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <div>
-                        <div class="title">Biography</div>
-                        <div class="bio">
-                            am a engineer Fusce auctor nisljaki
-                            I am a engineer Fusce auctor nisljaki
-                            tellus interdum, sit amet elementum
-                            ma maecenas nibh libero, ultrices
-                            am a engineer Fusce auctor nisljaki
-                        </div>
-                    </div>
-                    <div class="btn-wrapper">
-                        <div class="btn">
-                            Follow
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="user">
-                <div class="left">
-                    <div class="img"></div>
-                    <div class="username">@JohnDoe</div>
-                    <div class="options">
-                        <div>
-                            <span>243</span>
-                            <span>followers</span>
-                        </div>
-                        <div>
-                            <span>243</span>
-                            <span>articles</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <div>
-                        <div class="title">Biography</div>
-                        <div class="bio">
-                            am a engineer Fusce auctor nisljaki
-                            I am a engineer Fusce auctor nisljaki
-                            tellus interdum, sit amet elementum
-                            ma maecenas nibh libero, ultrices
-                            am a engineer Fusce auctor nisljaki
-                        </div>
-                    </div>
-                    <div class="btn-wrapper">
-                        <div class="btn">
-                            Follow
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="user">
-                <div class="left">
-                    <div class="img"></div>
-                    <div class="username">@JohnDoe</div>
-                    <div class="options">
-                        <div>
-                            <span>243</span>
-                            <span>followers</span>
-                        </div>
-                        <div>
-                            <span>243</span>
-                            <span>articles</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <div>
-                        <div class="title">Biography</div>
-                        <div class="bio">
-                            am a engineer Fusce auctor nisljaki
-                            I am a engineer Fusce auctor nisljaki
-                            tellus interdum, sit amet elementum
-                            ma maecenas nibh libero, ultrices
-                            am a engineer Fusce auctor nisljaki
-                        </div>
-                    </div>
-                    <div class="btn-wrapper">
-                        <div class="btn">
-                            Follow
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="user">
-                <div class="left">
-                    <div class="img"></div>
-                    <div class="username">@JohnDoe</div>
-                    <div class="options">
-                        <div>
-                            <span>243</span>
-                            <span>followers</span>
-                        </div>
-                        <div>
-                            <span>243</span>
-                            <span>articles</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <div>
-                        <div class="title">Biography</div>
-                        <div class="bio">
-                            am a engineer Fusce auctor nisljaki
-                            I am a engineer Fusce auctor nisljaki
-                            tellus interdum, sit amet elementum
-                            ma maecenas nibh libero, ultrices
-                            am a engineer Fusce auctor nisljaki
-                        </div>
-                    </div>
-                    <div class="btn-wrapper">
-                        <div class="btn">
-                            Follow
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="user">
-                <div class="left">
-                    <div class="img"></div>
-                    <div class="username">@JohnDoe</div>
-                    <div class="options">
-                        <div>
-                            <span>243</span>
-                            <span>followers</span>
-                        </div>
-                        <div>
-                            <span>243</span>
-                            <span>articles</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <div>
-                        <div class="title">Biography</div>
-                        <div class="bio">
-                            am a engineer Fusce auctor nisljaki
-                            I am a engineer Fusce auctor nisljaki
-                            tellus interdum, sit amet elementum
-                            ma maecenas nibh libero, ultrices
-                            am a engineer Fusce auctor nisljaki
-                        </div>
-                    </div>
-                    <div class="btn-wrapper">
-                        <div class="btn">
-                            Follow
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="user">
-                <div class="left">
-                    <div class="img"></div>
-                    <div class="username">@JohnDoe</div>
-                    <div class="options">
-                        <div>
-                            <span>243</span>
-                            <span>followers</span>
-                        </div>
-                        <div>
-                            <span>243</span>
-                            <span>articles</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <div>
-                        <div class="title">Biography</div>
-                        <div class="bio">
-                            am a engineer Fusce auctor nisljaki
-                            I am a engineer Fusce auctor nisljaki
-                            tellus interdum, sit amet elementum
-                            ma maecenas nibh libero, ultrices
-                            am a engineer Fusce auctor nisljaki
-                        </div>
-                    </div>
-                    <div class="btn-wrapper">
-                        <div class="btn">
-                            Follow
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="user">
-                <div class="left">
-                    <div class="img"></div>
-                    <div class="username">@JohnDoe</div>
-                    <div class="options">
-                        <div>
-                            <span>243</span>
-                            <span>followers</span>
-                        </div>
-                        <div>
-                            <span>243</span>
-                            <span>articles</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <div>
-                        <div class="title">Biography</div>
-                        <div class="bio">
-                            am a engineer Fusce auctor nisljaki
-                            I am a engineer Fusce auctor nisljaki
-                            tellus interdum, sit amet elementum
-                            ma maecenas nibh libero, ultrices
-                            am a engineer Fusce auctor nisljaki
-                        </div>
-                    </div>
-                    <div class="btn-wrapper">
-                        <div class="btn">
-                            Follow
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
+        <div id="Followers" class="tabcontent">
+            <div class="users">
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn">
+                                Follow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn">
+                                Follow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn">
+                                Follow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn btn-unfollow">
+                                Unfollow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn">
+                                Follow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn">
+                                Follow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn">
+                                Follow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="left">
+                        <div class="img"></div>
+                        <div class="username">@JaneDana</div>
+                        <div class="options">
+                            <div>
+                                <span>243</span>
+                                <span>followers</span>
+                            </div>
+                            <div>
+                                <span>243</span>
+                                <span>articles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <div class="title">Biography</div>
+                            <div class="bio">
+                                am a engineer Fusce auctor nisljaki
+                                I am a engineer Fusce auctor nisljaki
+                                tellus interdum, sit amet elementum
+                                ma maecenas nibh libero, ultrices
+                                am a engineer Fusce auctor nisljaki
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <div class="btn">
+                                Follow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
     <script src="./js/index.js"></script>
+    <script src="./js/follow.js"></script>
 </body>
 
 </html>
