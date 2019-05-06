@@ -167,61 +167,59 @@ a, h1, h2, h3, p, span {
             box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
             #users main .users .user .right .btn-wrapper .button:hover {
               text-decoration: none; }
-  #users main .users-popular {
-    padding: 2rem 2rem; }
-    #users main .users-popular .title {
-      text-align: center;
-      background: #ffffff;
-      margin: .5rem auto 1rem;
+  #users main .users-popular .title {
+    text-align: center;
+    background: #ffffff;
+    margin: .5rem auto 1rem;
+    box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+    #users main .users-popular .title h2 {
+      font-weight: 700;
+      color: #7d7d7d;
+      padding: 6px 0;
+      font-size: 23px;
+      font-family: 'nunito sans'; }
+  #users main .users-popular .user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    margin: .5rem 0;
+    padding: 1rem 2rem;
+    box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+    #users main .users-popular .user .img {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      background-size: cover;
+      background: transparent;
       box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
-      #users main .users-popular .title h2 {
-        font-weight: 700;
-        color: #7d7d7d;
-        padding: 6px 0;
-        font-size: 23px;
-        font-family: 'nunito sans'; }
-    #users main .users-popular .user {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background-color: white;
+    #users main .users-popular .user .options {
       width: 100%;
-      margin: .5rem 0;
-      padding: 1rem 2rem;
-      box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
-      #users main .users-popular .user .img {
-        width: 80px;
-        height: 80px;
-        border-radius: 40px;
-        background-size: cover;
-        background: transparent;
-        box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
-      #users main .users-popular .user .options {
-        width: 100%;
-        font-size: 13px;
-        padding: 5px 0;
+      font-size: 13px;
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between; }
+      #users main .users-popular .user .options .text {
+        font-size: 11px; }
+      #users main .users-popular .user .options div {
         display: flex;
-        justify-content: space-between; }
-        #users main .users-popular .user .options .text {
-          font-size: 11px; }
-        #users main .users-popular .user .options div {
-          display: flex;
-          flex-direction: column;
-          align-items: center; }
-          #users main .users-popular .user .options div span {
-            font-weight: 300; }
-      #users main .users-popular .user .button {
-        margin: 0;
-        color: #fff;
-        font-weight: lighter;
-        font-family: 'Nunito Sans';
-        font-size: 13px;
-        padding: 3px 1.7rem;
-        border: none;
-        width: 100%;
-        box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
-        #users main .users-popular .user .button:hover {
-          text-decoration: none; }
+        flex-direction: column;
+        align-items: center; }
+        #users main .users-popular .user .options div span {
+          font-weight: 300; }
+    #users main .users-popular .user .button {
+      margin: 0;
+      color: #fff;
+      font-weight: lighter;
+      font-family: 'Nunito Sans';
+      font-size: 13px;
+      padding: 3px 1.7rem;
+      border: none;
+      width: 100%;
+      box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+      #users main .users-popular .user .button:hover {
+        text-decoration: none; }
 
 @media only screen and (max-width: 600px) {
   #users header {
