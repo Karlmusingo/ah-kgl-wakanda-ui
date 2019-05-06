@@ -72,7 +72,7 @@
 				.share{
 					border: 0;
 					i{
-						font-size: 250%;
+						font-size: 150%;
 						color: #666;
 					}
 				}
@@ -328,15 +328,16 @@
 	
 	
 	@media only screen and (max-width: 527px) {
-		.title{
+		.overlay .title{
 			position: relative;
-			top: 5em;
+			top: 2.4em;
 			left: 30px;
 		}
 
 		.body-text{
 			position: relative;
 			left: 30px;
+			top: 20px;
 		}
 		.body-sidebar{
 			.author-details{
@@ -344,8 +345,7 @@
 			}
 			.actions{
 				position: absolute;
-				top: -10em;
-				right: 10px;
+				top: -8.6em;
 				.action-delete, .action-edit{
 					display: none;
 				}
@@ -407,12 +407,6 @@
 	}
 	
 	@media only screen and (min-width: 528px) and (max-width: 679.98px) {
-		.title{
-			position: relative;
-			top: 80px;
-			left: 30px;
-		}
-
 		.body-text{
 			position: relative;
 			top: -50px;
@@ -445,7 +439,10 @@
 			margin-top: 30%;
 		}
 
-		.title{
+		.overlay .title{
+			position: relative;
+			top: 80px;
+			left: 30px;
 			margin-top: 30px;
 			h1{
 				color: black !important;
@@ -485,12 +482,6 @@
 	}
 	
 	@media only screen and (min-width: 680px) and (max-width: 767.98px) {
-		.title{
-			position: relative;
-			top: 80px;
-			left: 30px;
-		}
-
 		.body-text{
 			position: relative;
 			top: -50px;
@@ -531,7 +522,10 @@
 			margin-top: 18%;
 		}
 
-		.title{
+		.overlay .title{
+			position: relative;
+			top: 80px;
+			left: 30px;
 			margin-top: 30px;
 			h1{
 				color: black !important;
@@ -561,7 +555,7 @@
 			justify-content: center;
 		}
 
-		.title{
+		.overlay .title{
 			margin-top: 30px;  
 			h1{
 				color:#fff !important;
@@ -610,7 +604,7 @@
 			padding-left: 0 !important;
 		}
 
-		.title{
+		.overlay .title{
 			margin-top: 30px;  
 			h1{
 				color: #fff !important;

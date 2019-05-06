@@ -1159,7 +1159,7 @@ a, h1, h2, h3, p, span {
     #single-article .article-body .body-sidebar .actions .share {
       border: 0; }
       #single-article .article-body .body-sidebar .actions .share i {
-        font-size: 250%;
+        font-size: 150%;
         color: #666; }
     #single-article .article-body .body-sidebar .actions .fa-envelope:hover {
       color: #db4437; }
@@ -1353,19 +1353,19 @@ a, h1, h2, h3, p, span {
     border-radius: 5px; }
 
 @media only screen and (max-width: 527px) {
-  #single-article .title {
+  #single-article .overlay .title {
     position: relative;
-    top: 5em;
+    top: 2.4em;
     left: 30px; }
   #single-article .body-text {
     position: relative;
-    left: 30px; }
+    left: 30px;
+    top: 20px; }
   #single-article .body-sidebar .author-details {
     display: none; }
   #single-article .body-sidebar .actions {
     position: absolute;
-    top: -10em;
-    right: 10px;
+    top: -8.6em;
     flex-wrap: nowrap;
     flex-direction: row !important;
     justify-content: flex-end !important; }
@@ -1402,10 +1402,6 @@ a, h1, h2, h3, p, span {
     padding: 0 auto; } }
 
 @media only screen and (min-width: 528px) and (max-width: 679.98px) {
-  #single-article .title {
-    position: relative;
-    top: 80px;
-    left: 30px; }
   #single-article .body-text {
     position: relative;
     top: -50px;
@@ -1427,9 +1423,12 @@ a, h1, h2, h3, p, span {
     flex-flow: row wrap;
     justify-content: space-between;
     margin-top: 30%; }
-  #single-article .title {
+  #single-article .overlay .title {
+    position: relative;
+    top: 80px;
+    left: 30px;
     margin-top: 30px; }
-    #single-article .title h1 {
+    #single-article .overlay .title h1 {
       color: black !important; }
   #single-article .related-article {
     display: flex;
@@ -1449,10 +1448,6 @@ a, h1, h2, h3, p, span {
     padding: 0 auto; } }
 
 @media only screen and (min-width: 680px) and (max-width: 767.98px) {
-  #single-article .title {
-    position: relative;
-    top: 80px;
-    left: 30px; }
   #single-article .body-text {
     position: relative;
     top: -50px;
@@ -1479,9 +1474,12 @@ a, h1, h2, h3, p, span {
     flex-flow: row wrap;
     justify-content: space-between;
     margin-top: 18%; }
-  #single-article .title {
+  #single-article .overlay .title {
+    position: relative;
+    top: 80px;
+    left: 30px;
     margin-top: 30px; }
-    #single-article .title h1 {
+    #single-article .overlay .title h1 {
       color: black !important; }
   #single-article .article {
     width: 100%; }
@@ -1495,9 +1493,9 @@ a, h1, h2, h3, p, span {
     padding-left: 0 !important; }
   #single-article .article-body {
     justify-content: center; }
-  #single-article .title {
+  #single-article .overlay .title {
     margin-top: 30px; }
-    #single-article .title h1 {
+    #single-article .overlay .title h1 {
       color: #fff !important; }
   #single-article .related-article {
     display: flex;
@@ -1522,9 +1520,9 @@ a, h1, h2, h3, p, span {
     flex-direction: column; }
   #single-article .pl-3 {
     padding-left: 0 !important; }
-  #single-article .title {
+  #single-article .overlay .title {
     margin-top: 30px; }
-    #single-article .title h1 {
+    #single-article .overlay .title h1 {
       color: #fff !important; }
   #single-article .comments {
     font-size: 1em !important; } }
@@ -2512,7 +2510,6 @@ a, h1, h2, h3, p, span {
   @media only screen and (max-width: 1000px) {
     #follow nav {
       display: none; } }
-<<<<<<< HEAD
   #follow .tab1 {
     padding-top: 1rem; }
     #follow .tab1 button {
@@ -2545,7 +2542,6 @@ a, h1, h2, h3, p, span {
     margin-top: 10%;
     padding: 6px 12px;
     border-top: none; }
-=======
 
 .button {
   background: #f46036;
@@ -2715,61 +2711,59 @@ a, h1, h2, h3, p, span {
             box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
             #users main .users .user .right .btn-wrapper .button:hover {
               text-decoration: none; }
-  #users main .users-popular {
-    padding: 2rem 2rem; }
-    #users main .users-popular .title {
-      text-align: center;
-      background: #ffffff;
-      margin: .5rem auto 1rem;
+  #users main .users-popular .title {
+    text-align: center;
+    background: #ffffff;
+    margin: .5rem auto 1rem;
+    box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+    #users main .users-popular .title h2 {
+      font-weight: 700;
+      color: #7d7d7d;
+      padding: 6px 0;
+      font-size: 23px;
+      font-family: 'nunito sans'; }
+  #users main .users-popular .user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    margin: .5rem 0;
+    padding: 1rem 2rem;
+    box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+    #users main .users-popular .user .img {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      background-size: cover;
+      background: transparent;
       box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
-      #users main .users-popular .title h2 {
-        font-weight: 700;
-        color: #7d7d7d;
-        padding: 6px 0;
-        font-size: 23px;
-        font-family: 'nunito sans'; }
-    #users main .users-popular .user {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background-color: white;
+    #users main .users-popular .user .options {
       width: 100%;
-      margin: .5rem 0;
-      padding: 1rem 2rem;
-      box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
-      #users main .users-popular .user .img {
-        width: 80px;
-        height: 80px;
-        border-radius: 40px;
-        background-size: cover;
-        background: transparent;
-        box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
-      #users main .users-popular .user .options {
-        width: 100%;
-        font-size: 13px;
-        padding: 5px 0;
+      font-size: 13px;
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between; }
+      #users main .users-popular .user .options .text {
+        font-size: 11px; }
+      #users main .users-popular .user .options div {
         display: flex;
-        justify-content: space-between; }
-        #users main .users-popular .user .options .text {
-          font-size: 11px; }
-        #users main .users-popular .user .options div {
-          display: flex;
-          flex-direction: column;
-          align-items: center; }
-          #users main .users-popular .user .options div span {
-            font-weight: 300; }
-      #users main .users-popular .user .button {
-        margin: 0;
-        color: #fff;
-        font-weight: lighter;
-        font-family: 'Nunito Sans';
-        font-size: 13px;
-        padding: 3px 1.7rem;
-        border: none;
-        width: 100%;
-        box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
-        #users main .users-popular .user .button:hover {
-          text-decoration: none; }
+        flex-direction: column;
+        align-items: center; }
+        #users main .users-popular .user .options div span {
+          font-weight: 300; }
+    #users main .users-popular .user .button {
+      margin: 0;
+      color: #fff;
+      font-weight: lighter;
+      font-family: 'Nunito Sans';
+      font-size: 13px;
+      padding: 3px 1.7rem;
+      border: none;
+      width: 100%;
+      box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+      #users main .users-popular .user .button:hover {
+        text-decoration: none; }
 
 @media only screen and (max-width: 600px) {
   #users header {
@@ -2789,4 +2783,3 @@ a, h1, h2, h3, p, span {
           display: none; }
         #users header .right .user .drop-down {
           display: none; } }
->>>>>>> adding users list
