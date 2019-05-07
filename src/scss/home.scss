@@ -134,6 +134,7 @@
             font-family: 'system-ui';
             margin: 1rem 0;
             width: 30%;
+            font-weight: 300;
         }
         
         .custom-select select {
@@ -172,13 +173,14 @@
             height: 21px;
             border-top-left-radius: 4px;
             border-bottom-left-radius: 4px;
-            padding: 7px 19px;
+            padding: 7px 32px;
         }
         
         /*style items (options):*/
         .select-items {
             position: absolute;
             background-color: #f1f1f1;
+            border: 1px solid #ececec;
             top: 100%;
             left: 0;
             right: 0;
@@ -208,8 +210,9 @@
             display: none;
         }
         .search{
-            width: 50%;
-            margin-left:60px;
+            width: 68%;
+            margin-left: 8px;
+            padding-top: 4px;
         }
         #large-article{
             display:none;
