@@ -1,3 +1,4 @@
+@import './shared/component.scss';
 #home-page{
     margin: 0;
 	padding: 0;
@@ -106,25 +107,96 @@
     .search {
         display: flex;
         flex-direction: row;
-        width:40%;
+        width:31%;
         position: relative;
         input {
             padding:5px 15px;
             height:25px;
-            width:100%;
+            width:88%;
             align-self: center;
             border:0px solid rgba(0,0,0,.1);
             background: #f5f5f5;
             outline: none;
-            border-radius:3px;
+            border-bottom-right-radius: 3px;
+            border-top-right-radius: 3px;
             font-size:.9em;
             font-weight:300;
         }
         i {
             position: absolute;
             right: 15px;
-            bottom: 20px;
+            bottom: 24px;
             color: #666;
+        }
+        /*the container must be positioned relative:*/
+        .custom-select {
+            position: relative;
+            font-family: 'system-ui';
+            margin: 1rem 0;
+            width: 30%;
+        }
+        
+        .custom-select select {
+            display: none; /*hide original SELECT element:*/
+        }
+        
+        .select-selected {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        /*style the arrow inside the select element:*/
+        .select-selected:after {
+            position: absolute;
+            content: "";
+            top: 14px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: $color-primary  transparent transparent transparent;
+        }
+        
+        /*point the arrow upwards when the select box is open (active):*/
+        .select-selected.select-arrow-active:after {
+            border-color: transparent transparent $color-primary transparent;
+            top: 7px;
+        }
+        
+        /*style the items (options), including the selected item:*/
+        .select-items div,.select-selected {
+            color: $color-primary;
+            border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+            cursor: pointer;
+            user-select: none;
+            height: 21px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            padding: 7px 19px;
+        }
+        
+        /*style items (options):*/
+        .select-items {
+            position: absolute;
+            background-color: #f1f1f1;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            div {
+                color: #888;
+            }
+        }
+        
+        /*hide the items when the select box is closed:*/
+        .select-hide {
+            display: none;
+        }
+        
+        .select-items div:hover, .same-as-selected {
+            background-color: #fff;
+            border: 1px solid $color-primary;
+            border-radius: none !important;
         }
     }
 

@@ -1,3 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Nunito:300,400,700,900|Nunito+Sans|Playfair+Display:400,700,900");
+.button {
+  background: #f46036;
+  color: #fafafa;
+  padding: 4px 8px;
+  border: 1px solid rgba(244, 96, 54, 0.5);
+  border-radius: 4px;
+  font-weight: 700; }
+
+.button-register, .button-login, .button-forgot-password {
+  width: 300px;
+  display: block;
+  text-align: center;
+  margin-top: 1rem; }
+
+.button-register:hover, .button-login:hover, .button-forgot-password:hover {
+  color: #dadada;
+  text-decoration: none;
+  box-shadow: 8px 10px 20px 15px rgba(46, 61, 73, 0.15); }
+
+a, h1, h2, h3, p, span {
+  font-family: 'Nunito Sans'; }
+
 #home-page {
   margin: 0;
   padding: 0;
@@ -84,24 +107,78 @@
   #home-page .search {
     display: flex;
     flex-direction: row;
-    width: 40%;
-    position: relative; }
+    width: 31%;
+    position: relative;
+    /*the container must be positioned relative:*/
+    /*style the arrow inside the select element:*/
+    /*point the arrow upwards when the select box is open (active):*/
+    /*style the items (options), including the selected item:*/
+    /*style items (options):*/
+    /*hide the items when the select box is closed:*/ }
     #home-page .search input {
       padding: 5px 15px;
       height: 25px;
-      width: 100%;
+      width: 88%;
       align-self: center;
       border: 0px solid rgba(0, 0, 0, 0.1);
       background: #f5f5f5;
       outline: none;
-      border-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
       font-size: .9em;
       font-weight: 300; }
     #home-page .search i {
       position: absolute;
       right: 15px;
-      bottom: 20px;
+      bottom: 24px;
       color: #666; }
+    #home-page .search .custom-select {
+      position: relative;
+      font-family: 'system-ui';
+      margin: 1rem 0;
+      width: 30%; }
+    #home-page .search .custom-select select {
+      display: none;
+      /*hide original SELECT element:*/ }
+    #home-page .search .select-selected {
+      background-color: #f5f5f5;
+      color: #333; }
+    #home-page .search .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 14px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-color: #f46036 transparent transparent transparent; }
+    #home-page .search .select-selected.select-arrow-active:after {
+      border-color: transparent transparent #f46036 transparent;
+      top: 7px; }
+    #home-page .search .select-items div, #home-page .search .select-selected {
+      color: #f46036;
+      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+      cursor: pointer;
+      user-select: none;
+      height: 21px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      padding: 7px 19px; }
+    #home-page .search .select-items {
+      position: absolute;
+      background-color: #f1f1f1;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 99; }
+      #home-page .search .select-items div {
+        color: #888; }
+    #home-page .search .select-hide {
+      display: none; }
+    #home-page .search .select-items div:hover, #home-page .search .same-as-selected {
+      background-color: #fff;
+      border: 1px solid #f46036;
+      border-radius: none !important; }
   @media only screen and (max-width: 600px) {
     #home-page header {
       justify-content: flex-start; }
