@@ -51,11 +51,54 @@ a, h1, h2, h3, p, span {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
       align-self: center;
       margin-right: 30px; }
+    #users header .right hr {
+      margin: 0px;
+      padding: 0px; }
+    #users header .right .view-all {
+      text-align: center;
+      margin: 0px; }
+    #users header .right .notification .drop-down-menu .user {
+      display: flex;
+      align-self: center;
+      align-items: center;
+      margin: 0 1px; }
+      #users header .right .notification .drop-down-menu .user:hover {
+        cursor: pointer; }
+      #users header .right .notification .drop-down-menu .user .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        background-image: url("../images/man.jpg");
+        background-size: cover; }
+      #users header .right .notification .drop-down-menu .user .username {
+        font-weight: 300;
+        font-size: .9em;
+        color: #999; }
+    #users header .right .notification .drop-down-menu {
+      width: 20%;
+      position: fixed;
+      top: 70px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+      border-radius: 3px; }
+      #users header .right .notification .drop-down-menu .unread {
+        background-color: aliceblue; }
+      #users header .right .notification .drop-down-menu div {
+        padding: 15px 20px; }
+        #users header .right .notification .drop-down-menu div span {
+          margin-left: 20px;
+          font-weight: 300; }
+        #users header .right .notification .drop-down-menu div:hover {
+          cursor: pointer;
+          background: #f4f6f9; }
+    #users header .right .drop-down-menu.user {
+      right: 50px; }
     #users header .right .drop-down-menu {
       width: 180px;
       position: fixed;
       top: 70px;
-      right: 50px;
       background-color: #fff;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
       border-radius: 3px; }
