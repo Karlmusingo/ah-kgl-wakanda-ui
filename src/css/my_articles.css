@@ -1,4 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Nunito:300,400,700,900|Nunito+Sans|Playfair+Display:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Nunito:300,400,700,900|Nunito+Sans|Playfair+Display:400,700,900");
+.button {
+  background: #f46036;
+  color: #fafafa;
+  padding: 4px 8px;
+  border: 1px solid rgba(244, 96, 54, 0.5);
+  border-radius: 4px;
+  font-weight: 700; }
+
+.button-register, .button-login, .button-forgot-password {
+  width: 300px;
+  display: block;
+  text-align: center;
+  margin-top: 1rem; }
+
+.button-register:hover, .button-login:hover, .button-forgot-password:hover {
+  color: #dadada;
+  text-decoration: none;
+  box-shadow: 8px 10px 20px 15px rgba(46, 61, 73, 0.15); }
+
+a, h1, h2, h3, p, span {
+  font-family: 'Nunito Sans'; }
+
 .button {
   background: #f46036;
   color: #fafafa;
@@ -218,10 +241,32 @@ a, h1, h2, h3, p, span {
       background-color: #fff;
       margin-bottom: 20px; }
       #my_articles .wrapper .article .image {
+        position: relative;
         display: flex;
         min-width: 40%;
         background-image: url("../img/card-image.jpg");
         background-size: cover; }
+        #my_articles .wrapper .article .image .bookmark {
+          position: absolute;
+          background-color: #fff;
+          right: 7px;
+          bottom: 180px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: .3px solid #000000;
+          padding: .1em;
+          cursor: pointer;
+          display: flex;
+          align-self: center;
+          align-items: center;
+          justify-content: center; }
+          #my_articles .wrapper .article .image .bookmark i {
+            font-weight: 400; }
+          #my_articles .wrapper .article .image .bookmark:hover, #my_articles .wrapper .article .image .bookmark:active {
+            background-color: #f46036; }
+            #my_articles .wrapper .article .image .bookmark:hover i, #my_articles .wrapper .article .image .bookmark:active i {
+              color: #fff; }
       #my_articles .wrapper .article .info {
         display: flex;
         flex-direction: column;
