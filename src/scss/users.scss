@@ -92,8 +92,6 @@
       }
   }
     .users-popular{
-      // padding: 2rem 2rem;
-
       .title{
         text-align: center;
         background: #ffffff;
@@ -170,8 +168,8 @@
           width: 50%;
           .btn{
               padding:7px 10px;
-              font-size:.5em; 
-              // margin: 0 auto;
+              font-size:.5em;
+              margin-right: 0px;
           }
           .drop-down-menu{
               top:70px;
@@ -186,10 +184,26 @@
                   display: none;
               }
           }
+          .notification{
+            .user{
+              .drop-down{
+                display: block;
+              }
+            }
+            .drop-down-menu{
+              width: 70%;
+              .user{
+                margin: 0 5px;
+                .username{
+                    display: block;
+                }
+                .drop-down{
+                    display: block;
+                }
+            }
+            }
+          }
       }
     }
-
-    
-    
 }
 }
