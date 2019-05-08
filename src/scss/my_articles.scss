@@ -1,4 +1,5 @@
 @import './shared/component.scss';
+@import './shared/component.scss';
 #my_articles{
 	margin: 0;
 	padding: 0;
@@ -253,11 +254,39 @@
                 background-color:#fff;
                 margin-bottom: 20px;    
                 .image{
+					position: relative;
                     display:flex;
                     min-width:40%;
                     background-image: url('../img/card-image.jpg');
-                    background-size: cover;
-                }
+					background-size: cover;
+					.bookmark{
+						position: absolute;
+						background-color: #fff;
+						right: 7px;
+						bottom: 180px;
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						border: .3px solid #000000;
+						padding: .1em;
+						cursor: pointer;
+						display:flex;
+						align-self: center;
+						align-items: center;
+						justify-content: center;
+						i {
+							font-weight: 400;
+						}
+						&:hover, &:active{
+							background-color:$color-primary;
+							i {
+								color: $color;
+							}
+						} 
+					}
+					
+				}
+				
                 .info{
                     display:flex;
                     flex-direction: column;

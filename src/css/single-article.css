@@ -141,6 +141,8 @@ a, h1, h2, h3, p, span {
         #single-article .article-body .body-text .article-info .article-details .option .digit {
           font-size: .8em;
           margin-left: 2px; }
+        #single-article .article-body .body-text .article-info .article-details .option .fa-bookmark:hover {
+          color: #f46036; }
 
 #single-article .author-details {
   display: flex;

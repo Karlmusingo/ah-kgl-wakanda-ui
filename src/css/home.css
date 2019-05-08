@@ -292,10 +292,32 @@ a, h1, h2, h3, p, span {
         background-color: #fff;
         margin-bottom: 30px; }
         #home-page .articles .left .article .image {
+          position: relative;
           display: flex;
           min-width: 45%;
           background-image: url("../img/card-image.jpg");
           background-size: cover; }
+          #home-page .articles .left .article .image .bookmark {
+            position: absolute;
+            background-color: #fff;
+            right: 7px;
+            bottom: 160px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: .3px solid #000000;
+            padding: .1em;
+            cursor: pointer;
+            display: flex;
+            align-self: center;
+            align-items: center;
+            justify-content: center; }
+            #home-page .articles .left .article .image .bookmark i {
+              font-weight: 400; }
+            #home-page .articles .left .article .image .bookmark:hover, #home-page .articles .left .article .image .bookmark:active {
+              background-color: #f46036; }
+              #home-page .articles .left .article .image .bookmark:hover i, #home-page .articles .left .article .image .bookmark:active i {
+                color: #fff; }
         #home-page .articles .left .article .info {
           display: flex;
           flex-direction: column;
