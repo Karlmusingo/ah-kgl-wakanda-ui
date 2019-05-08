@@ -93,3 +93,14 @@ window.onclick = function (event) {
         menu.style.display = 'none';
     }
 }
+// Notification dropdown
+const menu1 = Element('menu1');
+menu1.style.display = 'none';
+Element('menu-btn1').addEventListener('click', () => {
+    if (menu1.style.display == 'none') {
+        menu1.style.display = 'block';
+        return;
+    }
+    menu1.style.display = 'none';
+});
+

@@ -216,14 +216,140 @@ a, h1, h2, h3, p, span {
 a, h1, h2, h3, p, span {
   font-family: 'Nunito Sans'; }
 
-#body {
+#profile {
   margin: 0;
   padding: 0;
   background: #f4f6f9;
   font-family: 'Open Sans', sans-serif; }
-  #body a {
+  #profile header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafafa;
+    padding: 5px 0;
+    z-index: 10; }
+    #profile header .left {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      padding-left: 40px; }
+      #profile header .left img {
+        width: 45px;
+        height: 40px; }
+    #profile header .right {
+      display: flex;
+      align-items: center;
+      padding-right: 40px; }
+      #profile header .right .btn {
+        padding: 7px 20px;
+        background-color: #F46036;
+        font-size: .7em;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 2px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        align-self: center;
+        margin-right: 30px; }
+      #profile header .right hr {
+        margin: 0px;
+        padding: 0px; }
+      #profile header .right .view-all {
+        text-align: center;
+        margin: 0px; }
+      #profile header .right .notification .drop-down-menu .user {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        margin: 0 1px; }
+        #profile header .right .notification .drop-down-menu .user:hover {
+          cursor: pointer; }
+        #profile header .right .notification .drop-down-menu .user .avatar {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 15px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+          background-image: url("../images/man.jpg");
+          background-size: cover; }
+        #profile header .right .notification .drop-down-menu .user .username {
+          font-weight: 300;
+          font-size: .9em;
+          color: #999; }
+      #profile header .right .notification .user .drop-down .num {
+        position: relative;
+        bottom: 10px;
+        right: 5px;
+        padding: .2px 5px;
+        border-radius: 50%;
+        background: #F46036;
+        color: #fff;
+        line-height: 18px;
+        font-family: sans-serif;
+        text-align: center; }
+      #profile header .right .notification .user .fa {
+        font-size: 20px; }
+      #profile header .right .notification .drop-down-menu {
+        width: 22%;
+        position: fixed;
+        top: 70px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        border-radius: 3px; }
+        #profile header .right .notification .drop-down-menu .unread {
+          background-color: aliceblue; }
+        #profile header .right .notification .drop-down-menu div {
+          padding: 15px 20px; }
+          #profile header .right .notification .drop-down-menu div span {
+            margin-left: 20px;
+            font-weight: 300; }
+          #profile header .right .notification .drop-down-menu div:hover {
+            cursor: pointer;
+            background: #f4f6f9; }
+      #profile header .right .drop-down-menu.user {
+        right: 50px; }
+      #profile header .right .drop-down-menu {
+        width: 180px;
+        position: fixed;
+        top: 70px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        border-radius: 3px; }
+        #profile header .right .drop-down-menu div {
+          padding: 15px 20px; }
+          #profile header .right .drop-down-menu div span {
+            margin-left: 20px;
+            font-weight: 300; }
+          #profile header .right .drop-down-menu div:hover {
+            cursor: pointer;
+            background: #f4f6f9; }
+      #profile header .right .user {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        margin: 0 20px; }
+        #profile header .right .user:hover {
+          cursor: pointer; }
+        #profile header .right .user .avatar {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 15px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+          background-image: url("../images/man.jpg");
+          background-size: cover; }
+        #profile header .right .user .username {
+          font-weight: 300;
+          font-size: .9em;
+          color: #333; }
+        #profile header .right .user .drop-down {
+          margin-top: 5px;
+          margin-left: 15px; }
+          #profile header .right .user .drop-down i {
+            color: #666; }
+  #profile a {
     text-decoration: none; }
-  #body header {
+  #profile header {
     position: fixed;
     width: 100%;
     display: flex;
@@ -231,19 +357,19 @@ a, h1, h2, h3, p, span {
     background-color: #fff;
     padding: 5px 0;
     z-index: 10; }
-  #body .left {
+  #profile .left {
     display: flex;
     align-items: center;
     padding: 8px;
     padding-left: 40px; }
-    #body .left img {
+    #profile .left img {
       width: 45px;
       height: 40px; }
-  #body .right {
+  #profile .right {
     display: flex;
     align-items: center;
     padding-right: 40px; }
-    #body .right .btn {
+    #profile .right .btn {
       padding: 7px 20px;
       background-color: #F46036;
       font-size: .7em;
@@ -253,7 +379,7 @@ a, h1, h2, h3, p, span {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
       align-self: center;
       margin-right: 30px; }
-    #body .right .drop-down-menu {
+    #profile .right .drop-down-menu {
       width: 180px;
       position: fixed;
       top: 70px;
@@ -261,22 +387,22 @@ a, h1, h2, h3, p, span {
       background-color: #fff;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
       border-radius: 3px; }
-      #body .right .drop-down-menu div {
+      #profile .right .drop-down-menu div {
         padding: 15px 20px; }
-        #body .right .drop-down-menu div span {
+        #profile .right .drop-down-menu div span {
           margin-left: 20px;
           font-weight: 300; }
-        #body .right .drop-down-menu div:hover {
+        #profile .right .drop-down-menu div:hover {
           cursor: pointer;
           background: #f4f6f9; }
-    #body .right .user {
+    #profile .right .user {
       display: flex;
       align-self: center;
       align-items: center;
       margin: 0 20px; }
-      #body .right .user:hover {
+      #profile .right .user:hover {
         cursor: pointer; }
-      #body .right .user .avatar {
+      #profile .right .user .avatar {
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -284,34 +410,34 @@ a, h1, h2, h3, p, span {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
         background-image: url("../images/man.jpg");
         background-size: cover; }
-      #body .right .user .username {
+      #profile .right .user .username {
         font-weight: 300;
         font-size: .9em;
         color: #333; }
-      #body .right .user .drop-down {
+      #profile .right .user .drop-down {
         margin-top: 5px;
         margin-left: 15px; }
-        #body .right .user .drop-down i {
+        #profile .right .user .drop-down i {
           color: #666; }
   @media only screen and (max-width: 600px) {
-    #body header {
+    #profile header {
       padding: 0 0; }
-    #body .right {
+    #profile .right {
       padding-right: 0px; }
-      #body .right .btn {
-        padding: 7px 10px;
-        font-size: .5em;
-        margin-right: 10px; }
-      #body .right .drop-down-menu {
+      #profile .right .btn {
+        padding: 6px 10px !important;
+        font-size: .2rem !important;
+        margin: 0 40px; }
+      #profile .right .drop-down-menu {
         top: 70px;
         right: 5px; }
-      #body .right .user {
+      #profile .right .user {
         margin: 0 5px; }
-        #body .right .user .username {
+        #profile .right .user .username {
           display: none; }
-        #body .right .user .drop-down {
+        #profile .right .user .drop-down {
           display: none; } }
-  #body nav {
+  #profile nav {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -319,14 +445,14 @@ a, h1, h2, h3, p, span {
     width: 15%;
     height: 100%;
     background-color: #fff;
-    padding: 100px 40px 0px; }
-    #body nav .user {
+    padding: 66px 40px 0px; }
+    #profile nav .user {
       display: flex;
       flex-direction: column;
       align-self: center;
       align-items: center;
       padding-bottom: 20px; }
-      #body nav .user .p-avatar {
+      #profile nav .user .p-avatar {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -334,220 +460,200 @@ a, h1, h2, h3, p, span {
         height: 90px;
         border-radius: 50%;
         border: 2px solid #F46036; }
-        #body nav .user .p-avatar .avatar {
+        #profile nav .user .p-avatar .avatar {
           width: 80px;
           height: 80px;
           border-radius: 50%;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
           background-image: url("../images/man.jpg");
           background-size: cover; }
-      #body nav .user .name {
+      #profile nav .user .name {
         margin-top: 20px;
         font-weight: 400;
         font-size: 1em;
         padding-bottom: 5px;
         color: #000; }
-      #body nav .user .username {
+      #profile nav .user .username {
         font-weight: 300;
         font-size: .9em;
         color: #333; }
-    #body nav .info {
+    #profile nav .info {
       display: flex;
       justify-content: space-between;
       align-items: space-between;
       width: 100%;
       margin-top: 30px; }
-      #body nav .info .item span {
+      #profile nav .info .item span {
         font-size: .9em; }
-      #body nav .info .item .label {
+      #profile nav .info .item .label {
         font-weight: 600; }
-      #body nav .info .item .data {
+      #profile nav .info .item .data {
         text-align: center;
         font-weight: 300;
         color: #666;
         margin-top: 5px;
         font-size: .9em; }
-    #body nav .navigation {
+    #profile nav .navigation {
       padding-top: 60px;
       display: flex;
       flex-direction: column; }
-      #body nav .navigation .item {
+      #profile nav .navigation .item {
         display: flex;
         align-items: center;
         padding: 5px;
         font-weight: 300;
         margin-bottom: 20px;
         color: #333; }
-        #body nav .navigation .item:hover {
+        #profile nav .navigation .item:hover {
           color: #F46036; }
-        #body nav .navigation .item span {
+        #profile nav .navigation .item span {
           margin-left: 25px;
           font-size: 1em; }
-        #body nav .navigation .item i {
+        #profile nav .navigation .item i {
           font-size: 1.1em; }
-  @media only screen and (max-width: 600px) {
-    #body nav {
-      display: none; } }
-  #body .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-left: 20%; }
-  #body .container {
-    width: 70%;
-    padding: 20px;
-    margin-top: 100px; }
-    #body .container .user {
-      display: flex;
-      align-self: center;
-      align-items: center;
-      justify-content: flex-start;
-      margin-bottom: 20px; }
-      #body .container .user .avatar {
+    #profile nav .notif {
+      width: 100%; }
+      #profile nav .notif .switch {
         position: relative;
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        margin-right: 15px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
-        background-image: url("../images/man.jpg");
-        background-size: cover;
-        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); }
-        #body .container .user .avatar .edit {
+        display: inline-block;
+        width: 40px;
+        height: 25px; }
+        #profile nav .notif .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0; }
+        #profile nav .notif .switch .slider {
           position: absolute;
-          background-color: #F46036;
-          right: 7px;
-          bottom: 7px;
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          padding: .1em;
           cursor: pointer;
-          display: flex;
-          align-self: center;
-          align-items: center;
-          justify-content: center; }
-          #body .container .user .avatar .edit i {
-            color: #fff;
-            font-size: .5em; }
-      #body .container .user .names {
-        margin-left: 70px;
-        font-weight: 400;
-        font-size: 1.4em; }
-      #body .container .user .username {
-        font-weight: 300;
-        font-size: .7em;
-        margin-top: 10px;
-        color: #333; }
-    #body .container .profile {
-      padding: 20px 0px; }
-      #body .container .profile .title {
-        padding: 20px 0 60px;
-        font-weight: 400;
-        font-size: 1.1em; }
-      #body .container .profile form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%; }
-        #body .container .profile form .form-left, #body .container .profile form .form-right {
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between; }
-        #body .container .profile form .inputs {
-          width: 40%;
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 60px; }
-          #body .container .profile form .inputs .label {
-            padding-bottom: 10px;
-            font-weight: 300;
-            font-size: .9em; }
-          #body .container .profile form .inputs input {
-            padding: 5px 15px;
-            height: 35px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            border-radius: 3px;
-            font-size: .9em;
-            font-weight: 300; }
-          #body .container .profile form .inputs textarea {
-            padding: 5px 15px;
-            height: 140px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            width: 90%;
-            border-radius: 3px;
-            font-size: .9em;
-            font-weight: 300;
-            resize: none;
-            align-self: flex-start; }
-        #body .container .profile form .form-div {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          width: 40%;
-          align-self: flex-start; }
-          #body .container .profile form .form-div .inputs {
-            width: 100%; }
-        #body .container .profile form .btn {
-          padding: 10px 15px;
-          background-color: #F46036;
-          width: 90%;
-          border-radius: 3px;
-          font-size: 1em;
-          font-weight: 600;
-          text-align: center;
-          color: #fff;
-          font-size: .9em; }
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          -webkit-transition: .4s;
+          transition: .4s; }
+        #profile nav .notif .switch .slider:before {
+          position: absolute;
+          content: "";
+          height: 20px;
+          width: 20px;
+          left: 0px;
+          bottom: 2px;
+          background-color: white;
+          -webkit-transition: .4s;
+          transition: .4s; }
+        #profile nav .notif .switch input:checked + .slider {
+          background-color: #F46036; }
+        #profile nav .notif .switch input:checked + .slider:before {
+          -webkit-transform: translateX(26px);
+          -ms-transform: translateX(26px);
+          transform: translateX(19px); }
+        #profile nav .notif .switch .slider.round {
+          border-radius: 34px; }
+        #profile nav .notif .switch .slider.round:before {
+          border-radius: 50%; }
+      #profile nav .notif .email-notif {
+        float: right; }
   @media only screen and (max-width: 600px) {
-    #body .wrapper {
-      margin-left: 0; }
-    #body .container {
-      margin-top: 500px;
-      width: 100%;
-      padding: 30px; }
-      #body .container .user .avatar {
-        width: 98px;
-        height: 98px;
-        margin-right: 0px; }
-        #body .container .user .avatar .edit {
-          right: 4px;
-          bottom: 4px; }
-      #body .container .user .names {
-        margin-left: 20px; }
-      #body .container .profile {
+    #profile nav {
+      display: none; }
+    #profile .notification {
+      margin-top: 15px; }
+      #profile .notification .user .drop-down {
+        display: block; }
+        #profile .notification .user .drop-down .num {
+          position: relative;
+          bottom: 30px !important;
+          left: 17px;
+          padding: .2px 5px;
+          line-height: 4px;
+          font-family: sans-serif;
+          text-align: center; }
+    #profile .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin-left: 20%; }
+    #profile .container {
+      width: 70%;
+      padding: 20px;
+      margin-top: 100px; }
+      #profile .container .user {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px; }
+        #profile .container .user .avatar {
+          position: relative;
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          margin-right: 15px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+          background-image: url("../images/man.jpg");
+          background-size: cover;
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); }
+          #profile .container .user .avatar .edit {
+            position: absolute;
+            background-color: #F46036;
+            right: 7px;
+            bottom: 7px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            padding: .1em;
+            cursor: pointer;
+            display: flex;
+            align-self: center;
+            align-items: center;
+            justify-content: center; }
+            #profile .container .user .avatar .edit i {
+              color: #fff;
+              font-size: .5em; }
+        #profile .container .user .names {
+          margin-left: 70px;
+          font-weight: 400;
+          font-size: 1.4em; }
+        #profile .container .user .username {
+          font-weight: 300;
+          font-size: .7em;
+          margin-top: 10px;
+          color: #333; }
+      #profile .container .profile {
         padding: 20px 0px; }
-        #body .container .profile .title {
+        #profile .container .profile .title {
           padding: 20px 0 60px;
           font-weight: 400;
           font-size: 1.1em; }
-        #body .container .profile form {
+        #profile .container .profile form {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           width: 100%; }
-          #body .container .profile form .form-left, #body .container .profile form .form-right {
+          #profile .container .profile form .form-left, #profile .container .profile form .form-right {
             width: 100%;
             display: flex;
-            flex-direction: column; }
-          #body .container .profile form .inputs {
-            width: 100%;
+            flex-direction: row;
+            justify-content: space-between; }
+          #profile .container .profile form .inputs {
+            width: 40%;
             display: flex;
             flex-direction: column;
             margin-bottom: 60px; }
-            #body .container .profile form .inputs .label {
+            #profile .container .profile form .inputs .label {
               padding-bottom: 10px;
               font-weight: 300;
               font-size: .9em; }
-            #body .container .profile form .inputs input {
+            #profile .container .profile form .inputs input {
               padding: 5px 15px;
               height: 35px;
               border: 1px solid rgba(0, 0, 0, 0.1);
               border-radius: 3px;
               font-size: .9em;
               font-weight: 300; }
-            #body .container .profile form .inputs textarea {
+            #profile .container .profile form .inputs textarea {
               padding: 5px 15px;
               height: 140px;
               border: 1px solid rgba(0, 0, 0, 0.1);
@@ -557,15 +663,15 @@ a, h1, h2, h3, p, span {
               font-weight: 300;
               resize: none;
               align-self: flex-start; }
-          #body .container .profile form .form-div {
+          #profile .container .profile form .form-div {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 100%;
+            width: 40%;
             align-self: flex-start; }
-            #body .container .profile form .form-div .inputs {
+            #profile .container .profile form .form-div .inputs {
               width: 100%; }
-          #body .container .profile form .btn {
+          #profile .container .profile form .btn {
             padding: 10px 15px;
             background-color: #F46036;
             width: 90%;
@@ -574,39 +680,123 @@ a, h1, h2, h3, p, span {
             font-weight: 600;
             text-align: center;
             color: #fff;
+            font-size: .9em; } }
+
+@media only screen and (max-width: 600px) and (max-width: 600px) {
+  #profile .wrapper {
+    margin-left: 0; }
+  #profile .container {
+    margin-top: 500px;
+    width: 100%;
+    padding: 30px; }
+    #profile .container .user .avatar {
+      width: 98px;
+      height: 98px;
+      margin-right: 0px; }
+      #profile .container .user .avatar .edit {
+        right: 4px;
+        bottom: 4px; }
+    #profile .container .user .names {
+      margin-left: 20px; }
+    #profile .container .profile {
+      padding: 20px 0px; }
+      #profile .container .profile .title {
+        padding: 20px 0 60px;
+        font-weight: 400;
+        font-size: 1.1em; }
+      #profile .container .profile form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%; }
+        #profile .container .profile form .form-left, #profile .container .profile form .form-right {
+          width: 100%;
+          display: flex;
+          flex-direction: column; }
+        #profile .container .profile form .inputs {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 60px; }
+          #profile .container .profile form .inputs .label {
+            padding-bottom: 10px;
+            font-weight: 300;
             font-size: .9em; }
-    #body .profile {
-      width: 100%; } }
-  @media only screen and (max-width: 1300px) {
-    #body nav {
-      display: none; }
-    #body .wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin-left: 0%; } }
-  @media only screen and (max-height: 670px) {
-    #body .container {
-      margin-top: 500px; } }
-  @media only screen and (max-height: 770px) {
-    #body .container {
-      margin-top: 400px; } }
-  @media only screen and (max-height: 830px) {
-    #body .container {
-      margin-top: 300px; } }
-  @media only screen and (max-height: 570px) {
-    #body .container {
-      margin-top: 550px; } }
-  @media only screen and (height: 667px) {
-    #body .container {
-      margin-top: 440px; } }
-  @media only screen and (height: 736px) {
-    #body .container {
-      margin-top: 380px; } }
-  @media only screen and (min-height: 830px) {
-    #body .container {
-      margin-top: 30px; } }
+          #profile .container .profile form .inputs input {
+            padding: 5px 15px;
+            height: 35px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            font-size: .9em;
+            font-weight: 300; }
+          #profile .container .profile form .inputs textarea {
+            padding: 5px 15px;
+            height: 140px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            width: 90%;
+            border-radius: 3px;
+            font-size: .9em;
+            font-weight: 300;
+            resize: none;
+            align-self: flex-start; }
+        #profile .container .profile form .form-div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          align-self: flex-start; }
+          #profile .container .profile form .form-div .inputs {
+            width: 100%; }
+        #profile .container .profile form .btn {
+          padding: 10px 15px;
+          background-color: #F46036;
+          width: 90%;
+          border-radius: 3px;
+          font-size: 1em;
+          font-weight: 600;
+          text-align: center;
+          color: #fff;
+          font-size: .9em; }
+  #profile .profile {
+    width: 100%; } }
+
+@media only screen and (max-width: 600px) and (max-width: 1300px) {
+  #profile nav {
+    display: none; }
+  #profile .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 0%; } }
+
+@media only screen and (max-width: 600px) and (max-height: 670px) {
+  #profile .container {
+    margin-top: 500px; } }
+
+@media only screen and (max-width: 600px) and (max-height: 770px) {
+  #profile .container {
+    margin-top: 400px; } }
+
+@media only screen and (max-width: 600px) and (max-height: 830px) {
+  #profile .container {
+    margin-top: 300px; } }
+
+@media only screen and (max-width: 600px) and (max-height: 570px) {
+  #profile .container {
+    margin-top: 550px; } }
+
+@media only screen and (max-width: 600px) and (height: 667px) {
+  #profile .container {
+    margin-top: 440px; } }
+
+@media only screen and (max-width: 600px) and (height: 736px) {
+  #profile .container {
+    margin-top: 380px; } }
+
+@media only screen and (max-width: 600px) and (min-height: 830px) {
+  #profile .container {
+    margin-top: 30px; } }
 
 .button {
   background: #f46036;
@@ -2744,11 +2934,67 @@ a, h1, h2, h3, p, span {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
       align-self: center;
       margin-right: 30px; }
+    #users header .right hr {
+      margin: 0px;
+      padding: 0px; }
+    #users header .right .view-all {
+      text-align: center;
+      margin: 0px; }
+    #users header .right .notification .drop-down-menu .user {
+      display: flex;
+      align-self: center;
+      align-items: center;
+      margin: 0 1px; }
+      #users header .right .notification .drop-down-menu .user:hover {
+        cursor: pointer; }
+      #users header .right .notification .drop-down-menu .user .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        background-image: url("../images/man.jpg");
+        background-size: cover; }
+      #users header .right .notification .drop-down-menu .user .username {
+        font-weight: 300;
+        font-size: .9em;
+        color: #999; }
+    #users header .right .notification .user .drop-down .num {
+      position: relative;
+      bottom: 10px;
+      right: 5px;
+      padding: .2px 5px;
+      border-radius: 50%;
+      background: #F46036;
+      color: #fff;
+      line-height: 18px;
+      font-family: sans-serif;
+      text-align: center; }
+    #users header .right .notification .user .fa {
+      font-size: 20px; }
+    #users header .right .notification .drop-down-menu {
+      width: 22%;
+      position: fixed;
+      top: 70px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+      border-radius: 3px; }
+      #users header .right .notification .drop-down-menu .unread {
+        background-color: aliceblue; }
+      #users header .right .notification .drop-down-menu div {
+        padding: 15px 20px; }
+        #users header .right .notification .drop-down-menu div span {
+          margin-left: 20px;
+          font-weight: 300; }
+        #users header .right .notification .drop-down-menu div:hover {
+          cursor: pointer;
+          background: #f4f6f9; }
+    #users header .right .drop-down-menu.user {
+      right: 50px; }
     #users header .right .drop-down-menu {
       width: 180px;
       position: fixed;
       top: 70px;
-      right: 50px;
       background-color: #fff;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
       border-radius: 3px; }
@@ -2922,7 +3168,8 @@ a, h1, h2, h3, p, span {
       width: 50%; }
       #users header .right .btn {
         padding: 7px 10px;
-        font-size: .5em; }
+        font-size: .5em;
+        margin-right: 0px; }
       #users header .right .drop-down-menu {
         top: 70px;
         right: 5px; }
@@ -2931,4 +3178,14 @@ a, h1, h2, h3, p, span {
         #users header .right .user .username {
           display: none; }
         #users header .right .user .drop-down {
-          display: none; } }
+          display: none; }
+      #users header .right .notification .user .drop-down {
+        display: block; }
+      #users header .right .notification .drop-down-menu {
+        width: 70%; }
+        #users header .right .notification .drop-down-menu .user {
+          margin: 0 5px; }
+          #users header .right .notification .drop-down-menu .user .username {
+            display: block; }
+          #users header .right .notification .drop-down-menu .user .drop-down {
+            display: block; } }
