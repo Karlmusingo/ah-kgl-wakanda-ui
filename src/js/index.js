@@ -83,3 +83,13 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+    if (!event.target.matches('.drop')) {
+        if (menu.style.display == 'block') {
+            menu.style.display = 'none';
+            return;
+        }
+        menu.style.display = 'none';
+    }
+}
