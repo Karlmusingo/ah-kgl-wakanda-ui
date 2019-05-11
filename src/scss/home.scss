@@ -1,5 +1,16 @@
 @import './shared/component.scss';
 #home-page{
+    .time{
+		margin: .6em 0;
+		.read-time-dark{
+			color: #666;
+			font-size: 10pt !important;
+			font-family: 'Nunito Sans' !important;
+			padding: 0;
+			margin: 0;
+		}
+    }
+    
     margin: 0;
 	padding: 0;
 	background:#f5f5f5;
@@ -410,6 +421,9 @@
                             }
                         }
                         .right{
+                            display: flex;
+							flex-direction: column;
+							align-items: flex-end;
                             padding:0;
                             .rating{
                                 display:flex;
@@ -478,6 +492,9 @@
                                 }
                             }
                             .right{
+                                display: flex;
+								flex-direction: column;
+							    align-items: flex-end;
                                 padding:0;
                                 .rating{
                                     display:flex;
@@ -550,6 +567,9 @@
                         }
                         .right{
                             padding:0;
+                            display: flex;
+                            flex-direction: column;
+						    align-items: flex-end;
                             .rating{
                                 display:flex;
                                 i{
@@ -600,7 +620,9 @@
                                      width:auto;
                                  }
                                  .right{
-                                     align-items:flex-end;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items:flex-end;
                                     .rating{
                                          i {
                                             font-size: 0.6em;

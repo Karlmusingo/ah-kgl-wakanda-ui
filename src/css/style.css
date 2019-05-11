@@ -494,7 +494,7 @@ a, h1, h2, h3, p, span {
         margin-top: 5px;
         font-size: 0.9em; }
     #profile nav .navigation {
-      padding-top: 60px;
+      padding-top: 47px;
       display: flex;
       flex-direction: column; }
       #profile nav .navigation .item {
@@ -516,8 +516,8 @@ a, h1, h2, h3, p, span {
       #profile nav .notif .switch {
         position: relative;
         display: inline-block;
-        width: 40px;
-        height: 25px; }
+        width: 41px;
+        height: 24px; }
         #profile nav .notif .switch input {
           opacity: 0;
           width: 0;
@@ -1516,6 +1516,19 @@ a, h1, h2, h3, p, span {
 a, h1, h2, h3, p, span {
   font-family: 'Nunito Sans'; }
 
+#single-article .read-time-light {
+  color: #fafafa;
+  margin: .5em; }
+
+#single-article .time {
+  margin: .6em 0; }
+  #single-article .time .read-time-dark {
+    color: #262322;
+    font-size: 10pt !important;
+    font-family: 'Nunito Sans' !important;
+    padding: 0;
+    margin: 0; }
+
 #single-article .image-display {
   background-image: url("../img/image-display.jpg");
   background-position: center;
@@ -1731,6 +1744,9 @@ a, h1, h2, h3, p, span {
           #single-article .article .info .options .left .option i {
             margin-right: 10px; }
       #single-article .article .info .options .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         padding: 0; }
         #single-article .article .info .options .right .rating {
           display: flex; }
@@ -1997,6 +2013,14 @@ a, h1, h2, h3, p, span {
   padding: 0;
   background: #f5f5f5;
   font-family: 'Open Sans', sans-serif; }
+  #home-page .time {
+    margin: .6em 0; }
+    #home-page .time .read-time-dark {
+      color: #666;
+      font-size: 10pt !important;
+      font-family: 'Nunito Sans' !important;
+      padding: 0;
+      margin: 0; }
   #home-page a {
     text-decoration: none; }
   #home-page header {
@@ -2319,6 +2343,9 @@ a, h1, h2, h3, p, span {
                 #home-page .articles .left .article .info .options .left .option i {
                   margin-right: 10px; }
             #home-page .articles .left .article .info .options .right {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
               padding: 0; }
               #home-page .articles .left .article .info .options .right .rating {
                 display: flex; }
@@ -2375,6 +2402,9 @@ a, h1, h2, h3, p, span {
                   #home-page .articles .left .cards .article .info .options .left .option i {
                     margin-right: 10px; }
               #home-page .articles .left .cards .article .info .options .right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
                 padding: 0; }
                 #home-page .articles .left .cards .article .info .options .right .rating {
                   display: flex; }
@@ -2430,7 +2460,10 @@ a, h1, h2, h3, p, span {
                 #home-page .articles .right .article .info .options .left .option i {
                   margin-right: 10px; }
             #home-page .articles .right .article .info .options .right {
-              padding: 0; }
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end; }
               #home-page .articles .right .article .info .options .right .rating {
                 display: flex; }
                 #home-page .articles .right .article .info .options .right .rating i {
@@ -2463,6 +2496,8 @@ a, h1, h2, h3, p, span {
             #home-page .articles .most .cards .article .info .options .left {
               width: auto; }
             #home-page .articles .most .cards .article .info .options .right {
+              display: flex;
+              flex-direction: column;
               align-items: flex-end; }
               #home-page .articles .most .cards .article .info .options .right .rating i {
                 font-size: 0.6em; } }
@@ -2768,7 +2803,8 @@ a, h1, h2, h3, p, span {
             display: flex;
             flex-direction: row; }
             #my_articles .wrapper .article .info .options .left .option {
-              margin-right: 30px;
+              display: flex;
+              margin-right: 17px;
               font-size: .5em;
               color: #444; }
               #my_articles .wrapper .article .info .options .left .option i {

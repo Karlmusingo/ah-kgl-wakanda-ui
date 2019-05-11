@@ -21,6 +21,19 @@
 a, h1, h2, h3, p, span {
   font-family: 'Nunito Sans'; }
 
+#single-article .read-time-light {
+  color: #fafafa;
+  margin: .5em; }
+
+#single-article .time {
+  margin: .6em 0; }
+  #single-article .time .read-time-dark {
+    color: #262322;
+    font-size: 10pt !important;
+    font-family: 'Nunito Sans' !important;
+    padding: 0;
+    margin: 0; }
+
 #single-article .image-display {
   background-image: url("../img/image-display.jpg");
   background-position: center;
@@ -236,6 +249,9 @@ a, h1, h2, h3, p, span {
           #single-article .article .info .options .left .option i {
             margin-right: 10px; }
       #single-article .article .info .options .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         padding: 0; }
         #single-article .article .info .options .right .rating {
           display: flex; }

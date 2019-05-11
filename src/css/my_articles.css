@@ -293,7 +293,8 @@ a, h1, h2, h3, p, span {
             display: flex;
             flex-direction: row; }
             #my_articles .wrapper .article .info .options .left .option {
-              margin-right: 30px;
+              display: flex;
+              margin-right: 17px;
               font-size: .5em;
               color: #444; }
               #my_articles .wrapper .article .info .options .left .option i {
