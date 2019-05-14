@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Nunito:300,400,700,900|Nunito+Sans|Playfair+Display:400,700,900");
+.button {
+  background: #f46036;
+  color: #fafafa;
+  padding: 4px 8px;
+  border: 1px solid rgba(244, 96, 54, 0.5);
+  border-radius: 4px;
+  font-weight: 700; }
+
+.button-register, .button-login, .button-forgot-password {
+  width: 300px;
+  display: block;
+  text-align: center;
+  margin-top: 1rem; }
+
+.button-register:hover, .button-login:hover, .button-forgot-password:hover {
+  color: #dadada;
+  text-decoration: none;
+  box-shadow: 8px 10px 20px 15px rgba(46, 61, 73, 0.15); }
+
+a, h1, h2, h3, p, span {
+  font-family: 'Nunito Sans'; }
+
+#follow {
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  font-family: 'Open Sans', sans-serif; }
+  #follow a {
+    text-decoration: none; }
+  #follow header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px 0;
+    z-index: 10; }
+  #follow .left {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    padding-left: 40px; }
+    #follow .left img {
+      width: 45px;
+      height: 40px; }
+  #follow .right {
+    display: flex;
+    align-items: center;
+    padding-right: 40px; }
+    #follow .right .btn {
+      padding: 7px 20px;
+      background-color: #F46036;
+      font-size: .7em;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+      align-self: center;
+      margin-right: 30px; }
+    #follow .right .drop-down-menu {
+      width: 180px;
+      position: fixed;
+      top: 70px;
+      right: 50px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+      border-radius: 3px; }
+      #follow .right .drop-down-menu div {
+        padding: 15px 20px; }
+        #follow .right .drop-down-menu div span {
+          margin-left: 20px;
+          font-weight: 300; }
+        #follow .right .drop-down-menu div:hover {
+          cursor: pointer;
+          background: #f4f6f9; }
+    #follow .right .user {
+      display: flex;
+      align-self: center;
+      align-items: center;
+      margin: 0 20px; }
+      #follow .right .user:hover {
+        cursor: pointer; }
+      #follow .right .user .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        background-image: url("../images/man.jpg");
+        background-size: cover; }
+      #follow .right .user .username {
+        font-weight: 300;
+        font-size: .9em;
+        color: #333; }
+      #follow .right .user .drop-down {
+        margin-top: 5px;
+        margin-left: 15px; }
+        #follow .right .user .drop-down i {
+          color: #666; }
+  @media only screen and (max-width: 600px) {
+    #follow header {
+      padding: 0 0; }
+    #follow .right {
+      padding-right: 0px; }
+      #follow .right .btn {
+        padding: 7px 10px;
+        font-size: .5em;
+        margin-right: 10px; }
+      #follow .right .drop-down-menu {
+        top: 70px;
+        right: 5px; }
+      #follow .right .user {
+        margin: 0 5px; }
+        #follow .right .user .username {
+          display: none; }
+        #follow .right .user .drop-down {
+          display: none; } }
+  #follow nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15%;
+    height: 100%;
+    background-color: #fff;
+    padding: 100px 40px 0px; }
+    #follow nav .user {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: center;
+      padding-bottom: 20px; }
+      #follow nav .user .p-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 2px solid #F46036; }
+        #follow nav .user .p-avatar .avatar {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+          background-image: url("../images/man.jpg");
+          background-size: cover; }
+      #follow nav .user .name {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 1em;
+        padding-bottom: 5px;
+        color: #000; }
+      #follow nav .user .username {
+        font-weight: 300;
+        font-size: .9em;
+        color: #333; }
+    #follow nav .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: space-between;
+      width: 100%;
+      margin-top: 30px; }
+      #follow nav .info .item span {
+        font-size: .9em; }
+      #follow nav .info .item .label {
+        font-weight: 600; }
+      #follow nav .info .item .data {
+        text-align: center;
+        font-weight: 300;
+        color: #666;
+        margin-top: 5px;
+        font-size: .9em; }
+    #follow nav .navigation {
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column; }
+      #follow nav .navigation .item {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        color: #333; }
+        #follow nav .navigation .item:hover {
+          color: #F46036; }
+        #follow nav .navigation .item span {
+          margin-left: 25px;
+          font-size: 1em; }
+        #follow nav .navigation .item i {
+          font-size: 1.1em; }
+  @media only screen and (max-width: 600px) {
+    #follow nav {
+      display: none; } }
+  #follow .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    margin-left: 25%; }
+    #follow .wrapper .tabs {
+      display: flex;
+      padding-top: 130px; }
+      #follow .wrapper .tabs .tab {
+        margin-right: 30px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #333; }
+    #follow .wrapper .users {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 40px;
+      width: 95%; }
+      #follow .wrapper .users .user {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 49%;
+        margin-bottom: 20px;
+        background-color: #fff;
+        padding-top: 10px; }
+        #follow .wrapper .users .user .left {
+          display: flex;
+          flex-direction: column;
+          padding-left: 15px; }
+          #follow .wrapper .users .user .left .img {
+            width: 90px;
+            height: 90px;
+            background-image: url("../img/a_girl.jpeg");
+            background-size: cover;
+            border-radius: 50%; }
+          #follow .wrapper .users .user .left .options {
+            width: 100%;
+            font-size: .85em;
+            padding: 5px 5px 0px 0px;
+            display: flex;
+            justify-content: space-between; }
+            #follow .wrapper .users .user .left .options div {
+              display: flex;
+              flex-direction: column;
+              align-items: center; }
+              #follow .wrapper .users .user .left .options div span {
+                font-weight: 300; }
+          #follow .wrapper .users .user .left .username {
+            padding: 10px;
+            font-weight: 500;
+            font-size: .9em; }
+        #follow .wrapper .users .user .right {
+          padding-right: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding-left: 10px; }
+          #follow .wrapper .users .user .right .title {
+            padding-top: 5px;
+            font-weight: 500;
+            font-size: 1.1em; }
+          #follow .wrapper .users .user .right .bio {
+            font-size: 1em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-weight: 300; }
+          #follow .wrapper .users .user .right .btn-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 10px; }
+            #follow .wrapper .users .user .right .btn-wrapper .btn {
+              margin: 0;
+              cursor: pointer; }
+  @media only screen and (max-width: 600px) {
+    #follow .wrapper {
+      margin-left: 0; } }
+  @media only screen and (max-width: 1000px) {
+    #follow nav {
+      display: none; } }
+  #follow .tab1 {
+    padding-top: 1rem; }
+    #follow .tab1 button {
+      color: #666;
+      font-weight: 800;
+      font-family: 'Nunito'; }
+      #follow .tab1 button:hover {
+        color: #F46036; }
+    #follow .tab1 .active {
+      border-bottom: 2px solid #f46036;
+      color: #f46036; }
+  #follow .btn-unfollow {
+    background: #564256 !important; }
+  #follow .tab1 {
+    width: 100%;
+    margin: 4.5% 0% 0% 0%;
+    overflow: hidden;
+    background: #f4f6f9;
+    position: fixed; }
+  #follow .tab1 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px; }
+  #follow .tabcontent {
+    margin-top: 10%;
+    padding: 6px 12px;
+    border-top: none; }

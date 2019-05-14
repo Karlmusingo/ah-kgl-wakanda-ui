@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Nunito:300,400,700,900|Nunito+Sans|Playfair+Display:400,700,900");
+.button {
+  background: #f46036;
+  color: #fafafa;
+  padding: 4px 8px;
+  border: 1px solid rgba(244, 96, 54, 0.5);
+  border-radius: 4px;
+  font-weight: 700; }
+
+.button-register, .button-login, .button-forgot-password {
+  width: 300px;
+  display: block;
+  text-align: center;
+  margin-top: 1rem; }
+
+.button-register:hover, .button-login:hover, .button-forgot-password:hover {
+  color: #dadada;
+  text-decoration: none;
+  box-shadow: 8px 10px 20px 15px rgba(46, 61, 73, 0.15); }
+
+a, h1, h2, h3, p, span {
+  font-family: 'Nunito Sans'; }
+
+#users header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+  padding: 5px 0;
+  z-index: 10; }
+  #users header .left {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    padding-left: 40px; }
+    #users header .left img {
+      width: 45px;
+      height: 40px; }
+  #users header .right {
+    display: flex;
+    align-items: center;
+    padding-right: 40px; }
+    #users header .right .btn {
+      padding: 7px 20px;
+      background-color: #F46036;
+      font-size: .7em;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+      align-self: center;
+      margin-right: 30px; }
+    #users header .right hr {
+      margin: 0px;
+      padding: 0px; }
+    #users header .right .view-all {
+      text-align: center;
+      margin: 0px; }
+    #users header .right .notification .drop-down-menu .user {
+      display: flex;
+      align-self: center;
+      align-items: center;
+      margin: 0 1px; }
+      #users header .right .notification .drop-down-menu .user:hover {
+        cursor: pointer; }
+      #users header .right .notification .drop-down-menu .user .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        background-image: url("../images/man.jpg");
+        background-size: cover; }
+      #users header .right .notification .drop-down-menu .user .username {
+        font-weight: 300;
+        font-size: .9em;
+        color: #999; }
+    #users header .right .notification .user .drop-down .num {
+      position: relative;
+      bottom: 10px;
+      right: 5px;
+      padding: .2px 5px;
+      border-radius: 50%;
+      background: #F46036;
+      color: #fff;
+      line-height: 18px;
+      font-family: sans-serif;
+      text-align: center; }
+    #users header .right .notification .user .fa {
+      font-size: 20px; }
+    #users header .right .notification .drop-down-menu {
+      width: 22%;
+      position: fixed;
+      top: 70px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+      border-radius: 3px; }
+      #users header .right .notification .drop-down-menu .unread {
+        background-color: aliceblue; }
+      #users header .right .notification .drop-down-menu div {
+        padding: 15px 20px; }
+        #users header .right .notification .drop-down-menu div span {
+          margin-left: 20px;
+          font-weight: 300; }
+        #users header .right .notification .drop-down-menu div:hover {
+          cursor: pointer;
+          background: #f4f6f9; }
+    #users header .right .drop-down-menu.user {
+      right: 50px; }
+    #users header .right .drop-down-menu {
+      width: 180px;
+      position: fixed;
+      top: 70px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+      border-radius: 3px; }
+      #users header .right .drop-down-menu div {
+        padding: 15px 20px; }
+        #users header .right .drop-down-menu div span {
+          margin-left: 20px;
+          font-weight: 300; }
+        #users header .right .drop-down-menu div:hover {
+          cursor: pointer;
+          background: #f4f6f9; }
+    #users header .right .user {
+      display: flex;
+      align-self: center;
+      align-items: center;
+      margin: 0 20px; }
+      #users header .right .user:hover {
+        cursor: pointer; }
+      #users header .right .user .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        background-image: url("../images/man.jpg");
+        background-size: cover; }
+      #users header .right .user .username {
+        font-weight: 300;
+        font-size: .9em;
+        color: #333; }
+      #users header .right .user .drop-down {
+        margin-top: 5px;
+        margin-left: 15px; }
+        #users header .right .user .drop-down i {
+          color: #666; }
+
+#users main {
+  background: #f4f6f9;
+  padding: 4rem 2rem; }
+  #users main .users {
+    padding-top: 40px; }
+    #users main .users .user {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding: 10px 1rem 10px;
+      box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+      #users main .users .user .left {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px; }
+        #users main .users .user .left .img {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          background-size: cover; }
+        #users main .users .user .left .options {
+          width: 100%;
+          font-size: 13px;
+          padding: 5px 0;
+          display: flex;
+          justify-content: space-between; }
+          #users main .users .user .left .options .text {
+            font-size: 11px; }
+          #users main .users .user .left .options div {
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+            #users main .users .user .left .options div span {
+              font-weight: 300; }
+        #users main .users .user .left .username {
+          padding: 10px;
+          font-weight: 500;
+          font-size: .9em;
+          margin-top: 5px; }
+      #users main .users .user .right {
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-left: 10px; }
+        #users main .users .user .right .title {
+          padding-top: 5px;
+          font-weight: 500;
+          font-size: 1.1em; }
+        #users main .users .user .right .bio {
+          font-size: 13px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          color: #525252cf;
+          font-family: 'Nunito Sans'; }
+        #users main .users .user .right .btn-wrapper {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          padding-bottom: 10px; }
+          #users main .users .user .right .btn-wrapper .button {
+            margin: 0;
+            color: #fff;
+            font-weight: lighter;
+            font-family: 'Nunito Sans';
+            font-size: 13px;
+            padding: 3px 1.7rem;
+            border: none;
+            box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+            #users main .users .user .right .btn-wrapper .button:hover {
+              text-decoration: none; }
+  #users main .users-popular .title {
+    text-align: center;
+    background: #ffffff;
+    margin: .5rem auto 1rem;
+    box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+    #users main .users-popular .title h2 {
+      font-weight: 700;
+      color: #7d7d7d;
+      padding: 6px 0;
+      font-size: 23px;
+      font-family: 'nunito sans'; }
+  #users main .users-popular .user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    margin: .5rem 0;
+    padding: 1rem 2rem;
+    box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+    #users main .users-popular .user .img {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      background-size: cover;
+      background: transparent;
+      box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+    #users main .users-popular .user .options {
+      width: 100%;
+      font-size: 13px;
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between; }
+      #users main .users-popular .user .options .text {
+        font-size: 11px; }
+      #users main .users-popular .user .options div {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #users main .users-popular .user .options div span {
+          font-weight: 300; }
+    #users main .users-popular .user .button {
+      margin: 0;
+      color: #fff;
+      font-weight: lighter;
+      font-family: 'Nunito Sans';
+      font-size: 13px;
+      padding: 3px 1.7rem;
+      border: none;
+      width: 100%;
+      box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+      #users main .users-popular .user .button:hover {
+        text-decoration: none; }
+
+@media only screen and (max-width: 600px) {
+  #users header {
+    padding: 0; }
+    #users header .right {
+      padding-right: 0px;
+      width: 50%; }
+      #users header .right .btn {
+        padding: 7px 10px;
+        font-size: .5em;
+        margin-right: 0px; }
+      #users header .right .drop-down-menu {
+        top: 70px;
+        right: 5px; }
+      #users header .right .user {
+        margin: 0 5px; }
+        #users header .right .user .username {
+          display: none; }
+        #users header .right .user .drop-down {
+          display: none; }
+      #users header .right .notification .user .drop-down {
+        display: block; }
+      #users header .right .notification .drop-down-menu {
+        width: 70%; }
+        #users header .right .notification .drop-down-menu .user {
+          margin: 0 5px; }
+          #users header .right .notification .drop-down-menu .user .username {
+            display: block; }
+          #users header .right .notification .drop-down-menu .user .drop-down {
+            display: block; } }

@@ -1,3 +1,4 @@
+@import './shared/component.scss';
 #home-page{
     margin: 0;
 	padding: 0;
@@ -106,34 +107,115 @@
     .search {
         display: flex;
         flex-direction: row;
-        width:40%;
+        width:31%;
         position: relative;
         input {
             padding:5px 15px;
             height:25px;
-            width:100%;
+            width:88%;
             align-self: center;
             border:0px solid rgba(0,0,0,.1);
             background: #f5f5f5;
             outline: none;
-            border-radius:3px;
+            border-bottom-right-radius: 3px;
+            border-top-right-radius: 3px;
             font-size:.9em;
             font-weight:300;
         }
         i {
             position: absolute;
             right: 15px;
-            bottom: 20px;
+            bottom: 24px;
             color: #666;
+        }
+        /*the container must be positioned relative:*/
+        .custom-select {
+            position: relative;
+            font-family: 'system-ui';
+            margin: 1rem 0;
+            width: 30%;
+            font-weight: 300;
+        }
+        
+        .custom-select select {
+            display: none; /*hide original SELECT element:*/
+        }
+        
+        .select-selected {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        /*style the arrow inside the select element:*/
+        .select-selected:after {
+            position: absolute;
+            content: "";
+            top: 14px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: $color-primary  transparent transparent transparent;
+        }
+        
+        /*point the arrow upwards when the select box is open (active):*/
+        .select-selected.select-arrow-active:after {
+            border-color: transparent transparent $color-primary transparent;
+            top: 7px;
+        }
+        
+        /*style the items (options), including the selected item:*/
+        .select-items div,.select-selected {
+            color: $color-primary;
+            border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+            cursor: pointer;
+            user-select: none;
+            height: 21px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            padding: 7px 32px;
+        }
+        
+        /*style items (options):*/
+        .select-items {
+            position: absolute;
+            background-color: #f1f1f1;
+            border: 1px solid #ececec;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            div {
+                color: #888;
+            }
+        }
+        
+        /*hide the items when the select box is closed:*/
+        .select-hide {
+            display: none;
+        }
+        
+        .select-items div:hover, .same-as-selected {
+            background-color: #fff;
+            border: 1px solid $color-primary;
+            border-radius: none !important;
         }
     }
 
     @media only screen and (max-width: 600px) {
+        header{
+            justify-content:flex-start;
+        }
         .right {
             display: none;
         }
         .search{
-            width: 65%;
+            width: 68%;
+            margin-left: 8px;
+            padding-top: 4px;
+        }
+        #large-article{
+            display:none;
         }
     }
 
@@ -211,7 +293,13 @@
             }
         }
     }
-
+    @media only screen and (max-width: 600px){
+        .top{
+            .btn{
+                font-size: 0.7em;
+            }
+        }
+    }
     .articles{
         display: flex;
         justify-content: space-between;
@@ -224,7 +312,6 @@
             width:55%;
             .navigation{
                 position:relative;
-                display:none;
                 padding:15px 20px;
                 margin: 10px 0 25px;
                 background:#fff;
@@ -257,10 +344,36 @@
                 background-color:#fff;
                 margin-bottom:30px;
                 .image{
+                    position: relative;
                     display:flex;
                     min-width:45%;
                     background-image: url('../img/card-image.jpg');
                     background-size: cover;
+                    .bookmark{
+						position: absolute;
+						background-color: #fff;
+						right: 7px;
+						bottom: 160px;
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						border: .3px solid #000000;
+						padding: .1em;
+						cursor: pointer;
+						display:flex;
+						align-self: center;
+						align-items: center;
+						justify-content: center;
+						i {
+							font-weight: 400;
+						}
+						&:hover, &:active{
+							background-color:$color-primary;
+							i {
+								color: $color;
+							}
+						} 
+					}
                 }
                 .info{
                     display:flex;
@@ -451,12 +564,19 @@
             }  
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 1024px) {
             .trends{
                 display:none;
             }
+            .left{
+                width:100%;
+                justify-content:center;
+                padding-left:8px;
+            }
             .articles{
+                flex-direction: column;
                 .left{
+                    width:100%;
                     .navigation{
                         display:none;
                     }
@@ -465,9 +585,63 @@
             .article{
                 width:100%;
             }
+            .most{
+                .cards {
+                    width: 100%;
+                    .article{
+                         width:99%;
+                         .image{
+                             height:350px;
+                         }
+                         .info{
+                             .options{
+                                 align-items:center;
+                                 .left{
+                                     width:auto;
+                                 }
+                                 .right{
+                                     align-items:flex-end;
+                                    .rating{
+                                         i {
+                                            font-size: 0.6em;
+                                         }
+                                         
+                                     }
+                                 }
+                                
+                             }
+                         }
+                     } 
+                 }
+            }
         }
 
-
+        @media only screen and (max-width: 600px) {
+            .most{
+                .cards {
+                    .article{
+                         .image{
+                             height:210px;
+                         }
+                     } 
+                 }
+            }
+            .articles{
+                .left{
+                    .navigation {
+                        display: none;
+                    }
+                }
+            } 
+        }
     }
-
+    @media only screen and (max-width: 600px) {
+        .articles{
+            .left{
+                .navigation{
+                    display: none;
+                }
+            }
+        }
+    }
 }
