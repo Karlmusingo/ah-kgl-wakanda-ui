@@ -114,10 +114,6 @@
           <span>Favorites</span>
         </a>
         <a href="" class="item">
-          <i class="fas fa-signal"></i>
-          <span>Statistics</span>
-        </a>
-        <a href="" class="item">
           <i class="far fa-sticky-note"></i>
           <span>Complaints</span>
         </a>
@@ -149,21 +145,18 @@
 
     <div class="wrapper">
       <div class="container">
-        <div class="user">
-          <div class="avatar">
-            <div class="edit">
-              <i class="fas fa-pencil-alt"></i>
-            </div>
-          </div>
-          <div class="names">
-            <div class="name">Karl Musingo</div>
-            <div class="username">@karl345</div>
-          </div>
-        </div>
         <div class="profile">
-          <div class="title">Update profile</div>
-          <form class="">
-            <div class="form-left">
+          <form class="holder">
+            <div class="right">
+              <img
+                class="illustration-create"
+                src="../images/fog.png"
+                width="100%"
+                alt=""
+              />
+            </div>
+            <div class="form-left admin-form">
+              <div class="title">Create a user</div>
               <div class="inputs">
                 <span class="label">First name</span>
                 <input type="text" value="Karl" />
@@ -172,19 +165,16 @@
                 <span class="label">Last name</span>
                 <input type="text" value="Musingo" />
               </div>
-            </div>
-            <div class="form-right">
               <div class="inputs">
-                <span class="label">Bio</span>
-                <Textarea type="text" value="">My Biography</Textarea>
+                <span class="label">Email</span>
+                <input type="email" value="Email" />
               </div>
-
-              <div class="form-div">
-                <div class="inputs">
-                  <span class="label">Email</span>
-                  <input type="email" value="Email" />
-                </div>
-                <div class="btn">UPDATE</div>
+              <div class="inputs">
+                <span class="label">Password</span>
+                <input type="password" value="" />
+              </div>
+              <div class="inputs">
+                <div class="btn">CREATE</div>
               </div>
             </div>
           </form>

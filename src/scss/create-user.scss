@@ -1,0 +1,48 @@
+#profile .container .profile form .form-left,
+#profile .container .profile form .form-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#profile .container .profile form .inputs {
+  width: 100%;
+}
+
+#profile .container {
+  margin-top: 100px;
+  width: 85%;
+}
+
+#profile .container .profile form .inputs input {
+  width: 100%;
+}
+
+#profile .container .profile form .btn {
+  width: 100%;
+}
+
+#profile .container .profile form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#profile .container .profile .title {
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+@media only screen and(max-width: 800px) {
+  .illustration-create {
+    display: none;
+  }
+  #profile .container {
+    padding: 0;
+    padding-top: 100px;
+  }
+  #profile .container .profile form .inputs {
+    width: 90%;
+  }
+}

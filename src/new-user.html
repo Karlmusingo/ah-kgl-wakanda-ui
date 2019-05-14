@@ -17,54 +17,19 @@
     <title>Profile</title>
   </head>
 
-  <body id="profile">
+  <body id="body">
     <header class="row">
       <a href="#" class="left ">
         <img src="./images/logo_ah_2.png" alt="" />
       </a>
       <div class="right ">
         <a href="" class="btn">NEW ARTICLE</a>
-        <div class="notification">
-          <div class="user " id="menu-btn1">
-            <div class="drop-down">
-              <i class="fa fa-bell"></i>
-              <span class="num">3</span>
-            </div>
-          </div>
-          <div class="drop-down-menu" id="menu1">
-            <div class="user unread">
-              <div class="avatar"></div>
-              <div class="username">
-                Karl liked your article <br />
-                4 mins ago
-              </div>
-            </div>
-            <hr />
-            <div class="user unread">
-              <div class="avatar"></div>
-              <div class="username">
-                Karl commented on your article <br />
-                6 hours ago
-              </div>
-            </div>
-
-            <div class="user ">
-              <div class="avatar"></div>
-              <div class="username">
-                Karl followed you <br />
-                20 hours ago
-              </div>
-            </div>
-            <hr />
-            <div class="view-all">View all</div>
-          </div>
-        </div>
         <div class="user " id="menu-btn">
           <div class="avatar"></div>
           <div class="username">Karl Musingo</div>
           <div class="drop-down"><i class="fas fa-chevron-down"></i></div>
         </div>
-        <div class="drop-down-menu user" id="menu">
+        <div class="drop-down-menu" id="menu">
           <div class="profile">
             <i class="fas fa-user-alt"></i>
             <span>Profile</span>
@@ -134,36 +99,22 @@
           <span>Logout</span>
         </a>
       </div>
-
-      <div class="notif">
-        <hr />
-        <label class="switch">
-          <input type="checkbox" checked />
-          <span class="slider round"></span>
-        </label>
-        <label class="email-notif">
-          Email Notification
-        </label>
-      </div>
     </nav>
 
     <div class="wrapper">
       <div class="container">
-        <div class="user">
-          <div class="avatar">
-            <div class="edit">
-              <i class="fas fa-pencil-alt"></i>
-            </div>
-          </div>
-          <div class="names">
-            <div class="name">Karl Musingo</div>
-            <div class="username">@karl345</div>
-          </div>
-        </div>
         <div class="profile">
-          <div class="title">Update profile</div>
-          <form class="">
-            <div class="form-left">
+          <form class="holder">
+            <div class="right">
+              <img
+                class="illustration-create"
+                src="../images/fog.png"
+                width="100%"
+                alt=""
+              />
+            </div>
+            <div class="form-left admin-form">
+              <div class="title">Create a user</div>
               <div class="inputs">
                 <span class="label">First name</span>
                 <input type="text" value="Karl" />
@@ -172,19 +123,16 @@
                 <span class="label">Last name</span>
                 <input type="text" value="Musingo" />
               </div>
-            </div>
-            <div class="form-right">
               <div class="inputs">
-                <span class="label">Bio</span>
-                <Textarea type="text" value="">My Biography</Textarea>
+                <span class="label">Email</span>
+                <input type="email" value="Email" />
               </div>
-
-              <div class="form-div">
-                <div class="inputs">
-                  <span class="label">Email</span>
-                  <input type="email" value="Email" />
-                </div>
-                <div class="btn">UPDATE</div>
+              <div class="inputs">
+                <span class="label">Password</span>
+                <input type="password" value="" />
+              </div>
+              <div class="inputs">
+                <div class="btn">CREATE</div>
               </div>
             </div>
           </form>
