@@ -220,7 +220,7 @@ a, h1, h2, h3, p, span {
   margin: 0;
   padding: 0;
   background: #f4f6f9;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif; }
   #profile header {
     position: fixed;
     width: 100%;
@@ -371,8 +371,8 @@ a, h1, h2, h3, p, span {
     padding-right: 40px; }
     #profile .right .btn {
       padding: 7px 20px;
-      background-color: #F46036;
-      font-size: .7em;
+      background-color: #f46036;
+      font-size: 0.7em;
       color: #fff;
       font-weight: 600;
       border-radius: 2px;
@@ -412,7 +412,7 @@ a, h1, h2, h3, p, span {
         background-size: cover; }
       #profile .right .user .username {
         font-weight: 300;
-        font-size: .9em;
+        font-size: 0.9em;
         color: #333; }
       #profile .right .user .drop-down {
         margin-top: 5px;
@@ -426,7 +426,7 @@ a, h1, h2, h3, p, span {
       padding-right: 0px; }
       #profile .right .btn {
         padding: 6px 10px !important;
-        font-size: .2rem !important;
+        font-size: 0.2rem !important;
         margin: 0 40px; }
       #profile .right .drop-down-menu {
         top: 70px;
@@ -459,7 +459,7 @@ a, h1, h2, h3, p, span {
         width: 90px;
         height: 90px;
         border-radius: 50%;
-        border: 2px solid #F46036; }
+        border: 2px solid #f46036; }
         #profile nav .user .p-avatar .avatar {
           width: 80px;
           height: 80px;
@@ -475,7 +475,7 @@ a, h1, h2, h3, p, span {
         color: #000; }
       #profile nav .user .username {
         font-weight: 300;
-        font-size: .9em;
+        font-size: 0.9em;
         color: #333; }
     #profile nav .info {
       display: flex;
@@ -484,7 +484,7 @@ a, h1, h2, h3, p, span {
       width: 100%;
       margin-top: 30px; }
       #profile nav .info .item span {
-        font-size: .9em; }
+        font-size: 0.9em; }
       #profile nav .info .item .label {
         font-weight: 600; }
       #profile nav .info .item .data {
@@ -492,7 +492,7 @@ a, h1, h2, h3, p, span {
         font-weight: 300;
         color: #666;
         margin-top: 5px;
-        font-size: .9em; }
+        font-size: 0.9em; }
     #profile nav .navigation {
       padding-top: 60px;
       display: flex;
@@ -505,7 +505,7 @@ a, h1, h2, h3, p, span {
         margin-bottom: 20px;
         color: #333; }
         #profile nav .navigation .item:hover {
-          color: #F46036; }
+          color: #f46036; }
         #profile nav .navigation .item span {
           margin-left: 25px;
           font-size: 1em; }
@@ -530,8 +530,8 @@ a, h1, h2, h3, p, span {
           right: 0;
           bottom: 0;
           background-color: #ccc;
-          -webkit-transition: .4s;
-          transition: .4s; }
+          -webkit-transition: 0.4s;
+          transition: 0.4s; }
         #profile nav .notif .switch .slider:before {
           position: absolute;
           content: "";
@@ -540,10 +540,10 @@ a, h1, h2, h3, p, span {
           left: 0px;
           bottom: 2px;
           background-color: white;
-          -webkit-transition: .4s;
-          transition: .4s; }
+          -webkit-transition: 0.4s;
+          transition: 0.4s; }
         #profile nav .notif .switch input:checked + .slider {
-          background-color: #F46036; }
+          background-color: #f46036; }
         #profile nav .notif .switch input:checked + .slider:before {
           -webkit-transform: translateX(26px);
           -ms-transform: translateX(26px);
@@ -565,7 +565,7 @@ a, h1, h2, h3, p, span {
           position: relative;
           bottom: 30px !important;
           left: 17px;
-          padding: .2px 5px;
+          padding: 0.2px 5px;
           line-height: 4px;
           font-family: sans-serif;
           text-align: center; }
@@ -597,13 +597,13 @@ a, h1, h2, h3, p, span {
           box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); }
           #profile .container .user .avatar .edit {
             position: absolute;
-            background-color: #F46036;
+            background-color: #f46036;
             right: 7px;
             bottom: 7px;
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            padding: .1em;
+            padding: 0.1em;
             cursor: pointer;
             display: flex;
             align-self: center;
@@ -611,14 +611,14 @@ a, h1, h2, h3, p, span {
             justify-content: center; }
             #profile .container .user .avatar .edit i {
               color: #fff;
-              font-size: .5em; }
+              font-size: 0.5em; }
         #profile .container .user .names {
           margin-left: 70px;
           font-weight: 400;
           font-size: 1.4em; }
         #profile .container .user .username {
           font-weight: 300;
-          font-size: .7em;
+          font-size: 0.7em;
           margin-top: 10px;
           color: #333; }
       #profile .container .profile {
@@ -632,7 +632,8 @@ a, h1, h2, h3, p, span {
           flex-direction: column;
           justify-content: space-between;
           width: 100%; }
-          #profile .container .profile form .form-left, #profile .container .profile form .form-right {
+          #profile .container .profile form .form-left,
+          #profile .container .profile form .form-right {
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -645,13 +646,13 @@ a, h1, h2, h3, p, span {
             #profile .container .profile form .inputs .label {
               padding-bottom: 10px;
               font-weight: 300;
-              font-size: .9em; }
+              font-size: 0.9em; }
             #profile .container .profile form .inputs input {
               padding: 5px 15px;
               height: 35px;
               border: 1px solid rgba(0, 0, 0, 0.1);
               border-radius: 3px;
-              font-size: .9em;
+              font-size: 0.9em;
               font-weight: 300; }
             #profile .container .profile form .inputs textarea {
               padding: 5px 15px;
@@ -659,7 +660,7 @@ a, h1, h2, h3, p, span {
               border: 1px solid rgba(0, 0, 0, 0.1);
               width: 90%;
               border-radius: 3px;
-              font-size: .9em;
+              font-size: 0.9em;
               font-weight: 300;
               resize: none;
               align-self: flex-start; }
@@ -673,14 +674,14 @@ a, h1, h2, h3, p, span {
               width: 100%; }
           #profile .container .profile form .btn {
             padding: 10px 15px;
-            background-color: #F46036;
+            background-color: #f46036;
             width: 90%;
             border-radius: 3px;
             font-size: 1em;
             font-weight: 600;
             text-align: center;
             color: #fff;
-            font-size: .9em; } }
+            font-size: 0.9em; } }
 
 @media only screen and (max-width: 600px) and (max-width: 600px) {
   #profile .wrapper {
@@ -709,7 +710,8 @@ a, h1, h2, h3, p, span {
         flex-direction: column;
         justify-content: space-between;
         width: 100%; }
-        #profile .container .profile form .form-left, #profile .container .profile form .form-right {
+        #profile .container .profile form .form-left,
+        #profile .container .profile form .form-right {
           width: 100%;
           display: flex;
           flex-direction: column; }
@@ -721,13 +723,13 @@ a, h1, h2, h3, p, span {
           #profile .container .profile form .inputs .label {
             padding-bottom: 10px;
             font-weight: 300;
-            font-size: .9em; }
+            font-size: 0.9em; }
           #profile .container .profile form .inputs input {
             padding: 5px 15px;
             height: 35px;
             border: 1px solid rgba(0, 0, 0, 0.1);
             border-radius: 3px;
-            font-size: .9em;
+            font-size: 0.9em;
             font-weight: 300; }
           #profile .container .profile form .inputs textarea {
             padding: 5px 15px;
@@ -735,7 +737,7 @@ a, h1, h2, h3, p, span {
             border: 1px solid rgba(0, 0, 0, 0.1);
             width: 90%;
             border-radius: 3px;
-            font-size: .9em;
+            font-size: 0.9em;
             font-weight: 300;
             resize: none;
             align-self: flex-start; }
@@ -749,14 +751,14 @@ a, h1, h2, h3, p, span {
             width: 100%; }
         #profile .container .profile form .btn {
           padding: 10px 15px;
-          background-color: #F46036;
+          background-color: #f46036;
           width: 90%;
           border-radius: 3px;
           font-size: 1em;
           font-weight: 600;
           text-align: center;
           color: #fff;
-          font-size: .9em; }
+          font-size: 0.9em; }
   #profile .profile {
     width: 100%; } }
 
@@ -797,6 +799,227 @@ a, h1, h2, h3, p, span {
 @media only screen and (max-width: 600px) and (min-height: 830px) {
   #profile .container {
     margin-top: 30px; } }
+  #profile .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 20%; }
+  #profile .container {
+    width: 70%;
+    padding: 20px;
+    margin-top: 100px; }
+    #profile .container .user {
+      display: flex;
+      align-self: center;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 20px; }
+      #profile .container .user .avatar {
+        position: relative;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin-right: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        background-image: url("../images/man.jpg");
+        background-size: cover;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); }
+        #profile .container .user .avatar .edit {
+          position: absolute;
+          background-color: #f46036;
+          right: 7px;
+          bottom: 7px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          padding: 0.1em;
+          cursor: pointer;
+          display: flex;
+          align-self: center;
+          align-items: center;
+          justify-content: center; }
+          #profile .container .user .avatar .edit i {
+            color: #fff;
+            font-size: 0.5em; }
+      #profile .container .user .names {
+        margin-left: 70px;
+        font-weight: 400;
+        font-size: 1.4em; }
+      #profile .container .user .username {
+        font-weight: 300;
+        font-size: 0.7em;
+        margin-top: 10px;
+        color: #333; }
+    #profile .container .profile {
+      padding: 20px 0px; }
+      #profile .container .profile .title {
+        padding: 20px 0 60px;
+        font-weight: 400;
+        font-size: 1.1em; }
+      #profile .container .profile form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%; }
+        #profile .container .profile form .form-left,
+        #profile .container .profile form .form-right {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+        #profile .container .profile form .inputs {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 60px; }
+          #profile .container .profile form .inputs .label {
+            padding-bottom: 10px;
+            font-weight: 300;
+            font-size: 0.9em; }
+          #profile .container .profile form .inputs input {
+            padding: 5px 15px;
+            height: 35px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-weight: 300; }
+          #profile .container .profile form .inputs textarea {
+            padding: 5px 15px;
+            height: 140px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            width: 90%;
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-weight: 300;
+            resize: none;
+            align-self: flex-start; }
+        #profile .container .profile form .form-div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 40%;
+          align-self: flex-start; }
+          #profile .container .profile form .form-div .inputs {
+            width: 100%; }
+        #profile .container .profile form .btn {
+          padding: 10px 15px;
+          background-color: #f46036;
+          width: 90%;
+          border-radius: 3px;
+          font-size: 1em;
+          font-weight: 600;
+          text-align: center;
+          color: #fff;
+          font-size: 0.9em; }
+  @media only screen and (max-width: 600px) {
+    #profile .wrapper {
+      margin-left: 0; }
+    #profile .container {
+      margin-top: 500px;
+      width: 100%;
+      padding: 30px; }
+      #profile .container .user .avatar {
+        width: 98px;
+        height: 98px;
+        margin-right: 0px; }
+        #profile .container .user .avatar .edit {
+          right: 4px;
+          bottom: 4px; }
+      #profile .container .user .names {
+        margin-left: 20px; }
+      #profile .container .profile {
+        padding: 20px 0px; }
+        #profile .container .profile .title {
+          padding: 20px 0 60px;
+          font-weight: 400;
+          font-size: 1.1em; }
+        #profile .container .profile form {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%; }
+          #profile .container .profile form .form-left,
+          #profile .container .profile form .form-right {
+            width: 100%;
+            display: flex;
+            flex-direction: column; }
+          #profile .container .profile form .inputs {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 60px; }
+            #profile .container .profile form .inputs .label {
+              padding-bottom: 10px;
+              font-weight: 300;
+              font-size: 0.9em; }
+            #profile .container .profile form .inputs input {
+              padding: 5px 15px;
+              height: 35px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              border-radius: 3px;
+              font-size: 0.9em;
+              font-weight: 300; }
+            #profile .container .profile form .inputs textarea {
+              padding: 5px 15px;
+              height: 140px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              width: 90%;
+              border-radius: 3px;
+              font-size: 0.9em;
+              font-weight: 300;
+              resize: none;
+              align-self: flex-start; }
+          #profile .container .profile form .form-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            align-self: flex-start; }
+            #profile .container .profile form .form-div .inputs {
+              width: 100%; }
+          #profile .container .profile form .btn {
+            padding: 10px 15px;
+            background-color: #f46036;
+            width: 90%;
+            border-radius: 3px;
+            font-size: 1em;
+            font-weight: 600;
+            text-align: center;
+            color: #fff;
+            font-size: 0.9em; }
+    #profile .profile {
+      width: 100%; } }
+  @media only screen and (max-width: 1300px) {
+    #profile nav {
+      display: none; }
+    #profile .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin-left: 0%; } }
+  @media only screen and (max-height: 670px) {
+    #profile .container {
+      margin-top: 500px; } }
+  @media only screen and (max-height: 770px) {
+    #profile .container {
+      margin-top: 400px; } }
+  @media only screen and (max-height: 830px) {
+    #profile .container {
+      margin-top: 300px; } }
+  @media only screen and (max-height: 570px) {
+    #profile .container {
+      margin-top: 550px; } }
+  @media only screen and (height: 667px) {
+    #profile .container {
+      margin-top: 440px; } }
+  @media only screen and (height: 736px) {
+    #profile .container {
+      margin-top: 380px; } }
+  @media only screen and (min-height: 830px) {
+    #profile .container {
+      margin-top: 30px; } }
 
 .button {
   background: #f46036;
@@ -2202,47 +2425,6 @@ a, h1, h2, h3, p, span {
           #home-page .articles .articles .left .navigation {
             display: none; }
       #home-page .articles .article {
-<<<<<<< HEAD
-        width: 100%; } }
-
-#body .container .profile form .form-left,
-#body .container .profile form .form-right {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: flex-start; }
-
-#body .container .profile form .inputs {
-  width: 100%; }
-
-#body .container {
-  margin-top: 100px;
-  width: 85%; }
-
-#body .container .profile form .inputs input {
-  width: 100%; }
-
-#body .container .profile form .btn {
-  width: 100%; }
-
-#body .container .profile form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-#body .container .profile .title {
-  padding-bottom: 20px;
-  font-weight: 600; }
-
-@media only screen and (max-width: 800px) {
-  .illustration-create {
-    display: none; }
-  #body .container {
-    padding: 0;
-    padding-top: 100px; }
-  #body .container .profile form .inputs {
-    width: 90%; } }
-=======
         width: 100%; }
       #home-page .articles .most .cards {
         width: 100%; }
@@ -3230,4 +3412,41 @@ a, h1, h2, h3, p, span {
             display: block; }
           #users header .right .notification .drop-down-menu .user .drop-down {
             display: block; } }
->>>>>>> b8da4945b1784a14d4c3abd1ae14baaf0257319c
+
+#profile .container .profile form .form-left,
+#profile .container .profile form .form-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start; }
+
+#profile .container .profile form .inputs {
+  width: 100%; }
+
+#profile .container {
+  margin-top: 100px;
+  width: 85%; }
+
+#profile .container .profile form .inputs input {
+  width: 100%; }
+
+#profile .container .profile form .btn {
+  width: 100%; }
+
+#profile .container .profile form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+#profile .container .profile .title {
+  padding-bottom: 20px;
+  font-weight: 600; }
+
+@media only screen and (max-width: 800px) {
+  .illustration-create {
+    display: none; }
+  #profile .container {
+    padding: 0;
+    padding-top: 100px; }
+  #profile .container .profile form .inputs {
+    width: 90%; } }

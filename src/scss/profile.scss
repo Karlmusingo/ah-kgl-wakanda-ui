@@ -1,592 +1,871 @@
-@import './shared/component.scss';
-#profile{
-	@import './shared/header';
-	margin: 0;
-	padding: 0;
-	background:#f4f6f9;
-	font-family: 'Open Sans', sans-serif;
-	$color: #fff;
-	a{
-			text-decoration: none;
-	}
+@import "./shared/component.scss";
+#profile {
+  @import "./shared/header";
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  font-family: "Open Sans", sans-serif;
+  $color: #fff;
+  a {
+    text-decoration: none;
+  }
 
-	header {
-			position:fixed;
-			width:100%;
-			display: flex;
-			justify-content: space-between;
-			background-color: $color; 
-			padding: 5px 0;
-			z-index:10;
-	}
+  header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color;
+    padding: 5px 0;
+    z-index: 10;
+  }
 
-	.left{
-			display: flex;
-			align-items:center;
-			padding: 8px;
-			padding-left:40px;
-			img {
-					width: 45px;
-					height: 40px;
-			}
-	}
+  .left {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    padding-left: 40px;
+    img {
+      width: 45px;
+      height: 40px;
+    }
+  }
 
-	.right{
-			display:flex;
-			align-items:center;
-			padding-right:40px;
-			.btn{
-				padding:7px 20px;
-				background-color:#F46036;
-				font-size:.7em;     
-				color:#fff;   
-				font-weight:600;
-				border-radius:2px;
-				box-shadow: 0 2px 5px rgba(0,0,0,.12);
-				align-self: center;
-				margin-right:30px;
-			}
-			.drop-down-menu{
-				width:180px;
-				position:fixed;
-				top:70px;
-				right:50px;
-				background-color:#fff;
-				box-shadow: 0 2px 5px rgba(0,0,0,.12);
-				border-radius:3px;
-				
-				div{
-					padding:15px 20px;
-					span{
-						margin-left:20px;
-						font-weight:300;
-					}
-					&:hover{
-						cursor:pointer;
-						background:#f4f6f9;
-					}
-				}
-			}
-			.user{
-					display:flex;
-					align-self: center;
-					align-items:center;
-					margin: 0 20px;
-					&:hover{
-							cursor:pointer;
-					}
-					.avatar{
-							width:40px;
-							height:40px;
-							border-radius:50%;
-							margin-right:15px;
-							box-shadow: 0 2px 5px rgba(0,0,0,.12);
-							background-image:url('../images/man.jpg');
-							background-size: cover;
-					}
-					.username{
-							font-weight:300;
-							font-size:.9em;
-							color:#333;
-					}
-					.drop-down{
-							margin-top:5px;
-							margin-left:15px;
-							i{
-									color:#666;
-							}
-					}
-			}
-	}
+  .right {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    .btn {
+      padding: 7px 20px;
+      background-color: #f46036;
+      font-size: 0.7em;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+      align-self: center;
+      margin-right: 30px;
+    }
+    .drop-down-menu {
+      width: 180px;
+      position: fixed;
+      top: 70px;
+      right: 50px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+      border-radius: 3px;
 
-	@media only screen and (max-width: 600px) {
-			header {
-					padding: 0 0;
-			}
-			.right{
-					padding-right:0px;
-					.btn{
-							padding:6px 10px !important;
-							font-size:.2rem !important; 
-							margin: 0 40px;
-					}
-					.drop-down-menu{
-							top:70px;
-							right:5px;
-					}
-					.user{
-							margin: 0 5px;
-							.username{
-									display: none;
-							}
-							.drop-down{
-									display: none;
-							}
-					}
-			}
-	}
+      div {
+        padding: 15px 20px;
+        span {
+          margin-left: 20px;
+          font-weight: 300;
+        }
+        &:hover {
+          cursor: pointer;
+          background: #f4f6f9;
+        }
+      }
+    }
+    .user {
+      display: flex;
+      align-self: center;
+      align-items: center;
+      margin: 0 20px;
+      &:hover {
+        cursor: pointer;
+      }
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        background-image: url("../images/man.jpg");
+        background-size: cover;
+      }
+      .username {
+        font-weight: 300;
+        font-size: 0.9em;
+        color: #333;
+      }
+      .drop-down {
+        margin-top: 5px;
+        margin-left: 15px;
+        i {
+          color: #666;
+        }
+      }
+    }
+  }
 
-	nav {
-			position:fixed;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			width: 15%;
-			height:100%;
-			background-color: #fff;
-			padding: 66px 40px 0px;
-			.user {
-					display:flex;
-					flex-direction: column;
-					align-self: center;
-					align-items:center;
-					.p-avatar {
-							display:flex;
-							justify-content:center;
-							align-items: center;
-							width:90px;
-							height:90px;
-							border-radius: 50%;
-							border: 2px solid #F46036; 
-							.avatar{
-									width:80px;
-									height:80px;
-									border-radius:50%;
-									box-shadow: 0 2px 5px rgba(0,0,0,.12);
-									background-image:url('../images/man.jpg');
-									background-size: cover;
-							}
-					}
-					.name{
-							margin-top:20px;
-							font-weight:400;
-							font-size:1em;
-							padding-bottom: 5px;
-							color:#000;
-					}
-					.username{
-							font-weight:300;
-							font-size:.9em;
-							color:#333;
-					}
-					padding-bottom:20px;
-			}
+  @media only screen and (max-width: 600px) {
+    header {
+      padding: 0 0;
+    }
+    .right {
+      padding-right: 0px;
+      .btn {
+        padding: 6px 10px !important;
+        font-size: 0.2rem !important;
+        margin: 0 40px;
+      }
+      .drop-down-menu {
+        top: 70px;
+        right: 5px;
+      }
+      .user {
+        margin: 0 5px;
+        .username {
+          display: none;
+        }
+        .drop-down {
+          display: none;
+        }
+      }
+    }
+  }
 
-			.info {
-					display:flex;
-					justify-content:space-between;
-					align-items: space-between;
-					width:100%;
-					margin-top: 30px;
-					.item {
-							span {
-									font-size: .9em;
-							}
-							.label {
-									font-weight: 600;
-							}
-							.data {
-									text-align: center;
-									font-weight: 300;
-									color: #666;
-									margin-top: 5px;
-									font-size: .9em;
-							}
-					}
-			} 
+  nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15%;
+    height: 100%;
+    background-color: #fff;
+    padding: 66px 40px 0px;
+    .user {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: center;
+      .p-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 2px solid #f46036;
+        .avatar {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+          background-image: url("../images/man.jpg");
+          background-size: cover;
+        }
+      }
+      .name {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 1em;
+        padding-bottom: 5px;
+        color: #000;
+      }
+      .username {
+        font-weight: 300;
+        font-size: 0.9em;
+        color: #333;
+      }
+      padding-bottom: 20px;
+    }
 
-			.navigation{
-					padding-top:60px;
-					display: flex;
-					flex-direction:column;
-					.item{
-							display: flex;
-							align-items:center;
-							padding:5px;
-							font-weight:300;
-							margin-bottom:20px;
-							color:#333;
-							&:hover{
-									color: #F46036;
-							}
-							span{
-									margin-left: 25px;
-									font-size:1em;
-							}
-							i{
-									font-size:1.1em;
-							}
-					}
-			}
-			.notif{
-				width: 100%;
-				.switch {
-					position: relative;
-					display: inline-block;
-					width: 40px;
-					height: 25px;
-					input { 
-						opacity: 0;
-						width: 0;
-						height: 0;
-					  }
-					  .slider {
-						position: absolute;
-						cursor: pointer;
-						top: 0;
-						left: 0;
-						right: 0;
-						bottom: 0;
-						background-color: #ccc;
-						-webkit-transition: .4s;
-						transition: .4s;
-					  }
-					  .slider:before {
-						position: absolute;
-						content: "";
-						height: 20px;
-						width: 20px;
-						left: 0px;
-						bottom: 2px;
-						background-color: white;
-						-webkit-transition: .4s;
-						transition: .4s;
-					  }
-					  input:checked + .slider {
-						background-color: #F46036;
-					  }
-					  
-					  input:checked + .slider:before {
-						-webkit-transform: translateX(26px);
-						-ms-transform: translateX(26px);
-						transform: translateX(19px);
-					  }
-					.slider.round {
-						border-radius: 34px;
-					}
-					
-					.slider.round:before {
-						border-radius: 50%;
-					}
-				  }
-				  .email-notif{
-					  float:right;
-				  }
-			}
-			
-	}
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: space-between;
+      width: 100%;
+      margin-top: 30px;
+      .item {
+        span {
+          font-size: 0.9em;
+        }
+        .label {
+          font-weight: 600;
+        }
+        .data {
+          text-align: center;
+          font-weight: 300;
+          color: #666;
+          margin-top: 5px;
+          font-size: 0.9em;
+        }
+      }
+    }
 
-	@media only screen and (max-width: 600px) {
-			nav {
-					display: none;
-			}
-			.notification{
-				margin-top: 15px;
-				.user{
-				  .drop-down{
-					display: block;
-					  .num {
-						position:relative;
-						bottom: 30px !important;
-  						left: 17px;
-						padding:.2px 5px;
-						line-height:4px;
-						font-family:sans-serif;
-						text-align:center;
-					}
-				}
-			}
-	}
+    .navigation {
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      .item {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        color: #333;
+        &:hover {
+          color: #f46036;
+        }
+        span {
+          margin-left: 25px;
+          font-size: 1em;
+        }
+        i {
+          font-size: 1.1em;
+        }
+      }
+    }
+    .notif {
+      width: 100%;
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 25px;
+        input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+        }
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 20px;
+          width: 20px;
+          left: 0px;
+          bottom: 2px;
+          background-color: white;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+        }
+        input:checked + .slider {
+          background-color: #f46036;
+        }
 
-	.wrapper{
-			display:flex;
-			justify-content: center;
-			align-items:center;
-			height: 100vh;
-			margin-left: 20%;
-	}
+        input:checked + .slider:before {
+          -webkit-transform: translateX(26px);
+          -ms-transform: translateX(26px);
+          transform: translateX(19px);
+        }
+        .slider.round {
+          border-radius: 34px;
+        }
 
-	.container {
-			width: 70%;
-			padding:20px;
-			margin-top:100px;
-			.user{
-					display:flex;
-					align-self: center;
-					align-items:center;
-					justify-content: flex-start;
-					margin-bottom: 20px;
-					.avatar{
-							position:relative;
-							width:130px;
-							height:130px;
-							border-radius:50%;
-							margin-right:15px;
-							box-shadow: 0 2px 5px rgba(0,0,0,.12);
-							background-image:url('../images/man.jpg');
-							background-size: cover;
-							box-shadow: 0 20px 20px rgba(0,0,0,.1);
-							.edit {
-									position: absolute;
-									background-color: #F46036;
-									right: 7px;
-									bottom: 7px;
-									width: 20px;
-									height: 20px;
-									border-radius: 50%;
-									padding: .1em;
-									cursor: pointer;
-									display:flex;
-									align-self: center;
-									align-items: center;
-									justify-content: center;
-									i {
-											color: #fff;
-											font-size: .5em;
-									}
-							}
-					}
-					.names {
-							margin-left: 70px;
-							font-weight: 400;
-							font-size: 1.4em;
-					}
-					.username{
-							font-weight:300;
-							font-size:.7em;
-							margin-top: 10px;
-							color:#333;
-					}
-			}
+        .slider.round:before {
+          border-radius: 50%;
+        }
+      }
+      .email-notif {
+        float: right;
+      }
+    }
+  }
 
-			.profile{
-					padding:20px 0px;
-					.title{
-							padding:20px 0 60px;
-							font-weight:400;
-							font-size:1.1em;            
-					}
-					form{
-							display:flex;
-							flex-direction: column;
-							justify-content:space-between;
-							width:100%;
-							.form-left, .form-right{
-									width:100%;
-									display:flex;
-									flex-direction: row;
-									justify-content:space-between;
-							}
-							.inputs{
-									width:40%;
-									display:flex;
-									flex-direction:column;
-									margin-bottom:60px;
-									.label{
-										padding-bottom:10px;
-										font-weight:300;
-										font-size:.9em;
-									}
-									input{
-										padding:5px 15px;
-										height:35px;
-										border:1px solid rgba(0,0,0,.1);
-										border-radius:3px;
-										font-size:.9em;
-										font-weight:300;
-									}
-									textarea{
-										padding:5px 15px;
-										height:140px;
-										border:1px solid rgba(0,0,0,.1);
-										width:90%;
-										border-radius:3px;
-										font-size:.9em;
-										font-weight:300;
-										resize:none;
-										align-self: flex-start;
-									}
-									
-							}
-							.form-div{
-									display: flex;
-									flex-direction: column;
-									justify-content: space-between;
-									width:40%;
-									align-self: flex-start;
-									.inputs{
-											width: 100%;
-									}
-									.btn{
-									}
-							}
-							.btn{
-									padding:10px 15px;
-									background-color: #F46036;
-									width:90%;
-									border-radius:3px;
-									font-size:1em;
-									font-weight:600;
-									text-align:center;
-									color:#fff;
-									font-size:.9em;
-							}
-					}
-			}
-	}
+  @media only screen and (max-width: 600px) {
+    nav {
+      display: none;
+    }
+    .notification {
+      margin-top: 15px;
+      .user {
+        .drop-down {
+          display: block;
+          .num {
+            position: relative;
+            bottom: 30px !important;
+            left: 17px;
+            padding: 0.2px 5px;
+            line-height: 4px;
+            font-family: sans-serif;
+            text-align: center;
+          }
+        }
+      }
+    }
 
-	@media only screen and (max-width: 600px) {
-			.wrapper {
-					margin-left: 0;
-			}
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin-left: 20%;
+    }
 
-			.container {
-					margin-top: 500px;
-					width: 100%;
-					padding:30px;
-					.user {
-						.avatar {
-							width:98px;
-							height:98px;
-							margin-right:0px;
-							.edit {
-								right: 4px;
-								bottom: 4px;
-							}
-						}
-						.names {
-							margin-left: 20px;
-						}
-					}
-					.profile{
-							padding:20px 0px;
-							.title{
-									padding:20px 0 60px;
-									font-weight:400;
-									font-size:1.1em;            
-							}
-							form{
-									display:flex;
-									flex-direction: column;
-									justify-content:space-between;
-									width:100%;
-									.form-left, .form-right{
-										width:100%;
-										display:flex;
-										flex-direction: column;
-										// justify-content:space-between;
-									}
-									.inputs{
-										width:100%;
-										display:flex;
-										flex-direction:column;
-										margin-bottom:60px;
-										.label{
-											padding-bottom:10px;
-											font-weight:300;
-											font-size:.9em;
-										}
-										input{
-											padding:5px 15px;
-											height:35px;
-											border:1px solid rgba(0,0,0,.1);
-											border-radius:3px;
-											font-size:.9em;
-											font-weight:300;
-										}
-										textarea{
-											padding:5px 15px;
-											height:140px;
-											border:1px solid rgba(0,0,0,.1);
-											width:90%;
-											border-radius:3px;
-											font-size:.9em;
-											font-weight:300;
-											resize:none;
-											align-self: flex-start;
-										}
-										
-									}
-								.form-div{
-										display: flex;
-										flex-direction: column;
-										justify-content: space-between;
-										width:100%;
-										align-self: flex-start;
-										.inputs{
-											width: 100%;
-										}
-									}
-									.btn{
-											padding:10px 15px;
-											background-color: #F46036;
-											width:90%;
-											border-radius:3px;
-											font-size:1em;
-											font-weight:600;
-											text-align:center;
-											color:#fff;
-											font-size:.9em;
-									}
-							}
-					}
-					
-			}
+    .container {
+      width: 70%;
+      padding: 20px;
+      margin-top: 100px;
+      .user {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        .avatar {
+          position: relative;
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          margin-right: 15px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+          background-image: url("../images/man.jpg");
+          background-size: cover;
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+          .edit {
+            position: absolute;
+            background-color: #f46036;
+            right: 7px;
+            bottom: 7px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            padding: 0.1em;
+            cursor: pointer;
+            display: flex;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            i {
+              color: #fff;
+              font-size: 0.5em;
+            }
+          }
+        }
+        .names {
+          margin-left: 70px;
+          font-weight: 400;
+          font-size: 1.4em;
+        }
+        .username {
+          font-weight: 300;
+          font-size: 0.7em;
+          margin-top: 10px;
+          color: #333;
+        }
+      }
 
-			.profile {
-					width: 100%;
-			}
+      .profile {
+        padding: 20px 0px;
+        .title {
+          padding: 20px 0 60px;
+          font-weight: 400;
+          font-size: 1.1em;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          .form-left,
+          .form-right {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          .inputs {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 60px;
+            .label {
+              padding-bottom: 10px;
+              font-weight: 300;
+              font-size: 0.9em;
+            }
+            input {
+              padding: 5px 15px;
+              height: 35px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              border-radius: 3px;
+              font-size: 0.9em;
+              font-weight: 300;
+            }
+            textarea {
+              padding: 5px 15px;
+              height: 140px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              width: 90%;
+              border-radius: 3px;
+              font-size: 0.9em;
+              font-weight: 300;
+              resize: none;
+              align-self: flex-start;
+            }
+          }
+          .form-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 40%;
+            align-self: flex-start;
+            .inputs {
+              width: 100%;
+            }
+            .btn {
+            }
+          }
+          .btn {
+            padding: 10px 15px;
+            background-color: #f46036;
+            width: 90%;
+            border-radius: 3px;
+            font-size: 1em;
+            font-weight: 600;
+            text-align: center;
+            color: #fff;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
 
-			
-	}
+    @media only screen and (max-width: 600px) {
+      .wrapper {
+        margin-left: 0;
+      }
 
-	@media only screen and (max-width: 1300px) {
-			nav {
-					display: none;
-			}
-			.wrapper{
-					display:flex;
-					justify-content: center;
-					align-items:center;
-					height: 100vh;
-					margin-left: 0%;
-			}
-	}
+      .container {
+        margin-top: 500px;
+        width: 100%;
+        padding: 30px;
+        .user {
+          .avatar {
+            width: 98px;
+            height: 98px;
+            margin-right: 0px;
+            .edit {
+              right: 4px;
+              bottom: 4px;
+            }
+          }
+          .names {
+            margin-left: 20px;
+          }
+        }
+        .profile {
+          padding: 20px 0px;
+          .title {
+            padding: 20px 0 60px;
+            font-weight: 400;
+            font-size: 1.1em;
+          }
+          form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            .form-left,
+            .form-right {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              // justify-content:space-between;
+            }
+            .inputs {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 60px;
+              .label {
+                padding-bottom: 10px;
+                font-weight: 300;
+                font-size: 0.9em;
+              }
+              input {
+                padding: 5px 15px;
+                height: 35px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 3px;
+                font-size: 0.9em;
+                font-weight: 300;
+              }
+              textarea {
+                padding: 5px 15px;
+                height: 140px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                width: 90%;
+                border-radius: 3px;
+                font-size: 0.9em;
+                font-weight: 300;
+                resize: none;
+                align-self: flex-start;
+              }
+            }
+            .form-div {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              width: 100%;
+              align-self: flex-start;
+              .inputs {
+                width: 100%;
+              }
+            }
+            .btn {
+              padding: 10px 15px;
+              background-color: #f46036;
+              width: 90%;
+              border-radius: 3px;
+              font-size: 1em;
+              font-weight: 600;
+              text-align: center;
+              color: #fff;
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
 
-	@media only screen and ( max-height: 670px ) {
-			.container{
-					margin-top: 500px;
-			}
-	}
-	@media only screen and ( max-height: 770px ) {
-			.container{
-					margin-top: 400px;
-			}
-	}
-	@media only screen and ( max-height: 830px ) {
-			.container{
-					margin-top: 300px;
-			}
-	}
-	@media only screen and ( max-height: 570px ) {
-			.container{
-					margin-top: 550px;
-			}
-	}
-	@media only screen and ( height: 667px ) {
-			.container{
-					margin-top: 440px;
-			}
-	}
-	@media only screen and ( height: 736px ) {
-			.container{
-					margin-top: 380px;
-			}
-	}
-	@media only screen and ( min-height: 830px ) {
-			.container{
-					margin-top: 30px;
-			}
-	}
-}
+      .profile {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 1300px) {
+      nav {
+        display: none;
+      }
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-left: 0%;
+      }
+    }
+
+    @media only screen and (max-height: 670px) {
+      .container {
+        margin-top: 500px;
+      }
+    }
+    @media only screen and (max-height: 770px) {
+      .container {
+        margin-top: 400px;
+      }
+    }
+    @media only screen and (max-height: 830px) {
+      .container {
+        margin-top: 300px;
+      }
+    }
+    @media only screen and (max-height: 570px) {
+      .container {
+        margin-top: 550px;
+      }
+    }
+    @media only screen and (height: 667px) {
+      .container {
+        margin-top: 440px;
+      }
+    }
+    @media only screen and (height: 736px) {
+      .container {
+        margin-top: 380px;
+      }
+    }
+    @media only screen and (min-height: 830px) {
+      .container {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 20%;
+  }
+  .container {
+    width: 70%;
+    padding: 20px;
+    margin-top: 100px;
+    .user {
+      display: flex;
+      align-self: center;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      .avatar {
+        position: relative;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin-right: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        background-image: url("../images/man.jpg");
+        background-size: cover;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+        .edit {
+          position: absolute;
+          background-color: #f46036;
+          right: 7px;
+          bottom: 7px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          padding: 0.1em;
+          cursor: pointer;
+          display: flex;
+          align-self: center;
+          align-items: center;
+          justify-content: center;
+          i {
+            color: #fff;
+            font-size: 0.5em;
+          }
+        }
+      }
+      .names {
+        margin-left: 70px;
+        font-weight: 400;
+        font-size: 1.4em;
+      }
+      .username {
+        font-weight: 300;
+        font-size: 0.7em;
+        margin-top: 10px;
+        color: #333;
+      }
+    }
+    .profile {
+      padding: 20px 0px;
+      .title {
+        padding: 20px 0 60px;
+        font-weight: 400;
+        font-size: 1.1em;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        .form-left,
+        .form-right {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .inputs {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 60px;
+          .label {
+            padding-bottom: 10px;
+            font-weight: 300;
+            font-size: 0.9em;
+          }
+          input {
+            padding: 5px 15px;
+            height: 35px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-weight: 300;
+          }
+          textarea {
+            padding: 5px 15px;
+            height: 140px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            width: 90%;
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-weight: 300;
+            resize: none;
+            align-self: flex-start;
+          }
+        }
+        .form-div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 40%;
+          align-self: flex-start;
+          .inputs {
+            width: 100%;
+          }
+          .btn {
+          }
+        }
+        .btn {
+          padding: 10px 15px;
+          background-color: #f46036;
+          width: 90%;
+          border-radius: 3px;
+          font-size: 1em;
+          font-weight: 600;
+          text-align: center;
+          color: #fff;
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .wrapper {
+      margin-left: 0;
+    }
+    .container {
+      margin-top: 500px;
+      width: 100%;
+      padding: 30px;
+      .user {
+        .avatar {
+          width: 98px;
+          height: 98px;
+          margin-right: 0px;
+          .edit {
+            right: 4px;
+            bottom: 4px;
+          }
+        }
+        .names {
+          margin-left: 20px;
+        }
+      }
+      .profile {
+        padding: 20px 0px;
+        .title {
+          padding: 20px 0 60px;
+          font-weight: 400;
+          font-size: 1.1em;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          .form-left,
+          .form-right {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            // justify-content:space-between;
+          }
+          .inputs {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 60px;
+            .label {
+              padding-bottom: 10px;
+              font-weight: 300;
+              font-size: 0.9em;
+            }
+            input {
+              padding: 5px 15px;
+              height: 35px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              border-radius: 3px;
+              font-size: 0.9em;
+              font-weight: 300;
+            }
+            textarea {
+              padding: 5px 15px;
+              height: 140px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              width: 90%;
+              border-radius: 3px;
+              font-size: 0.9em;
+              font-weight: 300;
+              resize: none;
+              align-self: flex-start;
+            }
+          }
+          .form-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            align-self: flex-start;
+            .inputs {
+              width: 100%;
+            }
+            .btn {
+            }
+          }
+          .btn {
+            padding: 10px 15px;
+            background-color: #f46036;
+            width: 90%;
+            border-radius: 3px;
+            font-size: 1em;
+            font-weight: 600;
+            text-align: center;
+            color: #fff;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+    .profile {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 1300px) {
+    nav {
+      display: none;
+    }
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin-left: 0%;
+    }
+  }
+  @media only screen and (max-height: 670px) {
+    .container {
+      margin-top: 500px;
+    }
+  }
+  @media only screen and (max-height: 770px) {
+    .container {
+      margin-top: 400px;
+    }
+  }
+  @media only screen and (max-height: 830px) {
+    .container {
+      margin-top: 300px;
+    }
+  }
+  @media only screen and (max-height: 570px) {
+    .container {
+      margin-top: 550px;
+    }
+  }
+  @media only screen and (height: 667px) {
+    .container {
+      margin-top: 440px;
+    }
+  }
+  @media only screen and (height: 736px) {
+    .container {
+      margin-top: 380px;
+    }
+  }
+  @media only screen and (min-height: 830px) {
+    .container {
+      margin-top: 30px;
+    }
+  }
 }

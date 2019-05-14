@@ -1,37 +1,37 @@
-#body .container .profile form .form-left,
-#body .container .profile form .form-right {
+#profile .container .profile form .form-left,
+#profile .container .profile form .form-right {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: flex-start; }
 
-#body .container .profile form .inputs {
+#profile .container .profile form .inputs {
   width: 100%; }
 
-#body .container {
+#profile .container {
   margin-top: 100px;
   width: 85%; }
 
-#body .container .profile form .inputs input {
+#profile .container .profile form .inputs input {
   width: 100%; }
 
-#body .container .profile form .btn {
+#profile .container .profile form .btn {
   width: 100%; }
 
-#body .container .profile form {
+#profile .container .profile form {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
 
-#body .container .profile .title {
+#profile .container .profile .title {
   padding-bottom: 20px;
   font-weight: 600; }
 
 @media only screen and (max-width: 800px) {
   .illustration-create {
     display: none; }
-  #body .container {
+  #profile .container {
     padding: 0;
     padding-top: 100px; }
-  #body .container .profile form .inputs {
+  #profile .container .profile form .inputs {
     width: 90%; } }
