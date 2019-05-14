@@ -12,6 +12,7 @@
 
 #body .container {
   margin-top: 100px;
+  width: 85%;
 }
 
 #body .container .profile form .inputs input {
@@ -25,6 +26,7 @@
 #body .container .profile form {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #body .container .profile .title {
