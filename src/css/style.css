@@ -1594,3 +1594,12 @@ a, h1, h2, h3, p, span {
 #body .container .profile .title {
   padding-bottom: 20px;
   font-weight: 600; }
+
+@media only screen and (max-width: 800px) {
+  .illustration-create {
+    display: none; }
+  #body .container {
+    padding: 0;
+    padding-top: 100px; }
+  #body .container .profile form .inputs {
+    width: 90%; } }
