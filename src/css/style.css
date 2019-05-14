@@ -1565,3 +1565,30 @@ a, h1, h2, h3, p, span {
         display: none; }
       #home-page .articles .article {
         width: 100%; } }
+
+#body .container .profile form .form-left,
+#body .container .profile form .form-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start; }
+
+#body .container .profile form .inputs {
+  width: 100%; }
+
+#body .container {
+  margin-top: 100px; }
+
+#body .container .profile form .inputs input {
+  width: 100%; }
+
+#body .container .profile form .btn {
+  width: 100%; }
+
+#body .container .profile form {
+  display: flex;
+  flex-direction: row; }
+
+#body .container .profile .title {
+  padding-bottom: 20px;
+  font-weight: 600; }
