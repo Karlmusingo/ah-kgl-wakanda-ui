@@ -16,6 +16,8 @@
 		}
 	}
 
+
+
   .image-display{
     background-image: url("../img/image-display.jpg");
     // text-align: center;
@@ -247,6 +249,11 @@
 			line-height: 1.8;
 			font-size: 18px;
 			text-align: justify;
+			display: flex;
+			flex-direction: column;
+			.option{
+				align-items:flex-end;
+			}
 		}
 	}
 
@@ -651,7 +658,7 @@
 }
 
 .list{
-	transition: .5s all;
+	transition: opacity 1s ease-out;
 }
 
 .history{
@@ -661,6 +668,10 @@
 	margin-bottom: 5px;
 	.date{
 		text-align: right;
+	}
+
+	.text{
+		color: #9e9e9e;
 	}
 }
 

@@ -204,7 +204,11 @@ a, h1, h2, h3, p, span {
     color: #666;
     line-height: 1.8;
     font-size: 18px;
-    text-align: justify; }
+    text-align: justify;
+    display: flex;
+    flex-direction: column; }
+    #single-article .comment-card .comments .option {
+      align-items: flex-end; }
 
 #single-article .related-article {
   display: flex;
@@ -471,7 +475,7 @@ a, h1, h2, h3, p, span {
     font-size: .8em; }
 
 .list {
-  transition: .5s all; }
+  transition: opacity 1s ease-out; }
 
 .history {
   font-size: .9em;
@@ -480,6 +484,8 @@ a, h1, h2, h3, p, span {
   margin-bottom: 5px; }
   .history .date {
     text-align: right; }
+  .history .text {
+    color: #9e9e9e; }
 
 .history-btn {
   border-bottom: 1px solid #ddd;

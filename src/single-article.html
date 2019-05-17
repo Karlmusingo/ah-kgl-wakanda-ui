@@ -236,6 +236,10 @@
 					Voluptas,
 					dicta recusandae laudantium totam cupiditate saepe vel fuga sunt perspiciatis, blanditiis voluptate
 					numquam!
+					<div class="option">
+						<i class="far fa-thumbs-up"></i>
+						<span class="">245</span>
+					</div>
 				</div>
 			</div>
 			<br>
@@ -250,14 +254,18 @@
 					</div>
 				</div>
 				<div class="comments">
-					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit numquam id nemo corporis alias
-						ipsa
-						quo.
-						Voluptas,
-						dicta recusandae laudantium totam cupiditate saepe vel fuga sunt perspiciatis, blanditiis
-						voluptate
-						numquam!
-					</span>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit numquam id nemo corporis alias
+					ipsa
+					quo.
+					Voluptas,
+					dicta recusandae laudantium totam cupiditate saepe vel fuga sunt perspiciatis, blanditiis
+					voluptate
+					numquam!
+
+					<div class="option">
+						<i class="far fa-thumbs-up"></i>
+						<span class="">245</span>
+					</div>
 					<div class="history-btn" id="history-btn"><span>History</span></div>
 					<div class="list" id="list">
 						<div class="history">
@@ -279,16 +287,17 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<script>
-			const h = document.getElementById('list');
-			document.getElementById('history-btn').addEventListener('click', () => {
-				if (h.style.display == 'block') {
-					h.style.display = 'none';
-				} else {
-					h.style.display = 'block';
-				}
-			});
-		</script>
+			<script>
+				const h = document.getElementById('list');
+				document.getElementById('history-btn').addEventListener('click', () => {
+					if (h.style.display == 'block') {
+						h.style.display = 'none';
+						h.style.opacity = 0;
+					} else {
+						h.style.display = 'block';
+						h.style.opacity = 1;
+					}
+				});
+			</script>
 </body>
 <html>

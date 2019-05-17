@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Nunito:300,400,700,900|Nunito+Sans|Playfair+Display:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Nunito:300,400,700,900|Nunito+Sans|Playfair+Display:400,700,900");
+.button {
+  background: #f46036;
+  color: #fafafa;
+  padding: 4px 8px;
+  border: 1px solid rgba(244, 96, 54, 0.5);
+  border-radius: 4px;
+  font-weight: 700; }
+
+.button-register, .button-login, .button-forgot-password {
+  width: 300px;
+  display: block;
+  text-align: center;
+  margin-top: 1rem; }
+
+.button-register:hover, .button-login:hover, .button-forgot-password:hover {
+  color: #dadada;
+  text-decoration: none;
+  box-shadow: 8px 10px 20px 15px rgba(46, 61, 73, 0.15); }
+
+a, h1, h2, h3, p, span {
+  font-family: 'Nunito Sans'; }
+
+.button {
+  background: #f46036;
+  color: #fafafa;
+  padding: 4px 8px;
+  border: 1px solid rgba(244, 96, 54, 0.5);
+  border-radius: 4px;
+  font-weight: 700; }
+
+.button-register, .button-login, .button-forgot-password {
+  width: 300px;
+  display: block;
+  text-align: center;
+  margin-top: 1rem; }
+
+.button-register:hover, .button-login:hover, .button-forgot-password:hover {
+  color: #dadada;
+  text-decoration: none;
+  box-shadow: 8px 10px 20px 15px rgba(46, 61, 73, 0.15); }
+
+a, h1, h2, h3, p, span {
+  font-family: 'Nunito Sans'; }
+
+#my_bookmarks {
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  font-family: 'Open Sans', sans-serif; }
+  #my_bookmarks a {
+    text-decoration: none; }
+  #my_bookmarks header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px 0;
+    z-index: 10; }
+  #my_bookmarks .left {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    padding-left: 40px; }
+    #my_bookmarks .left img {
+      width: 45px;
+      height: 40px; }
+  #my_bookmarks .right {
+    display: flex;
+    align-items: center;
+    padding-right: 40px; }
+    #my_bookmarks .right .btn {
+      padding: 7px 20px;
+      background-color: #F46036;
+      font-size: .7em;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+      align-self: center;
+      margin-right: 30px; }
+    #my_bookmarks .right .drop-down-menu {
+      width: 180px;
+      position: fixed;
+      top: 70px;
+      right: 50px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+      border-radius: 3px; }
+      #my_bookmarks .right .drop-down-menu div {
+        padding: 15px 20px; }
+        #my_bookmarks .right .drop-down-menu div span {
+          margin-left: 20px;
+          font-weight: 300; }
+        #my_bookmarks .right .drop-down-menu div:hover {
+          cursor: pointer;
+          background: #f4f6f9; }
+    #my_bookmarks .right .user {
+      display: flex;
+      align-self: center;
+      align-items: center;
+      margin: 0 20px; }
+      #my_bookmarks .right .user:hover {
+        cursor: pointer; }
+      #my_bookmarks .right .user .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        background-image: url("../images/man.jpg");
+        background-size: cover; }
+      #my_bookmarks .right .user .username {
+        font-weight: 300;
+        font-size: .9em;
+        color: #333; }
+      #my_bookmarks .right .user .drop-down {
+        margin-top: 5px;
+        margin-left: 15px; }
+        #my_bookmarks .right .user .drop-down i {
+          color: #666; }
+  @media only screen and (max-width: 600px) {
+    #my_bookmarks header {
+      padding: 0 0; }
+    #my_bookmarks .right {
+      padding-right: 0px; }
+      #my_bookmarks .right .btn {
+        padding: 7px 10px;
+        font-size: .5em;
+        margin-right: 10px; }
+      #my_bookmarks .right .drop-down-menu {
+        top: 70px;
+        right: 5px; }
+      #my_bookmarks .right .user {
+        margin: 0 5px; }
+        #my_bookmarks .right .user .username {
+          display: none; }
+        #my_bookmarks .right .user .drop-down {
+          display: none; } }
+  #my_bookmarks nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15%;
+    height: 100%;
+    background-color: #fff;
+    padding: 100px 40px 0px; }
+    #my_bookmarks nav .user {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: center;
+      padding-bottom: 20px; }
+      #my_bookmarks nav .user .p-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 2px solid #F46036; }
+        #my_bookmarks nav .user .p-avatar .avatar {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+          background-image: url("../images/man.jpg");
+          background-size: cover; }
+      #my_bookmarks nav .user .name {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 1em;
+        padding-bottom: 5px;
+        color: #000; }
+      #my_bookmarks nav .user .username {
+        font-weight: 300;
+        font-size: .9em;
+        color: #333; }
+    #my_bookmarks nav .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: space-between;
+      width: 100%;
+      margin-top: 30px; }
+      #my_bookmarks nav .info .item span {
+        font-size: .9em; }
+      #my_bookmarks nav .info .item .label {
+        font-weight: 600; }
+      #my_bookmarks nav .info .item .data {
+        text-align: center;
+        font-weight: 300;
+        color: #666;
+        margin-top: 5px;
+        font-size: .9em; }
+    #my_bookmarks nav .navigation {
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column; }
+      #my_bookmarks nav .navigation .item {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        color: #333; }
+        #my_bookmarks nav .navigation .item:hover {
+          color: #F46036; }
+        #my_bookmarks nav .navigation .item span {
+          margin-left: 25px;
+          font-size: 1em; }
+        #my_bookmarks nav .navigation .item i {
+          font-size: 1.1em; }
+  @media only screen and (max-width: 600px) {
+    #my_bookmarks nav {
+      display: none; } }
+  #my_bookmarks .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    margin-left: 20%; }
+    #my_bookmarks .wrapper .title {
+      font-size: 1.3em;
+      padding-bottom: 10px;
+      margin-top: 100px;
+      padding-left: 50px; }
+    #my_bookmarks .wrapper .articles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 50px; }
+    #my_bookmarks .wrapper .article {
+      width: 49%;
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+      margin-bottom: 20px; }
+      #my_bookmarks .wrapper .article .image {
+        position: relative;
+        display: flex;
+        min-width: 40%;
+        background-image: url("../img/card-image.jpg");
+        background-size: cover; }
+        #my_bookmarks .wrapper .article .image .bookmark {
+          position: absolute;
+          background-color: #fff;
+          right: 7px;
+          bottom: 180px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: .3px solid #000000;
+          padding: .1em;
+          cursor: pointer;
+          display: flex;
+          align-self: center;
+          align-items: center;
+          justify-content: center; }
+          #my_bookmarks .wrapper .article .image .bookmark i {
+            font-weight: 400; }
+          #my_bookmarks .wrapper .article .image .bookmark:hover, #my_bookmarks .wrapper .article .image .bookmark:active {
+            background-color: #f46036; }
+            #my_bookmarks .wrapper .article .image .bookmark:hover i, #my_bookmarks .wrapper .article .image .bookmark:active i {
+              color: #fff; }
+      #my_bookmarks .wrapper .article .info {
+        display: flex;
+        flex-direction: column;
+        padding: 20px; }
+        #my_bookmarks .wrapper .article .info .title {
+          margin: 0;
+          padding: 0;
+          padding-bottom: 20px;
+          font-size: 1em;
+          font-weight: 700; }
+        #my_bookmarks .wrapper .article .info .description {
+          padding-bottom: 5px;
+          font-size: .95em;
+          font-weight: 300;
+          color: #333; }
+        #my_bookmarks .wrapper .article .info .options {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-end;
+          padding-top: 20px; }
+          #my_bookmarks .wrapper .article .info .options .left {
+            padding: 0;
+            display: flex;
+            flex-direction: row; }
+            #my_bookmarks .wrapper .article .info .options .left .option {
+              display: flex;
+              margin-right: 17px;
+              font-size: .5em;
+              color: #444; }
+              #my_bookmarks .wrapper .article .info .options .left .option i {
+                margin-right: 10px; }
+          #my_bookmarks .wrapper .article .info .options .right {
+            padding: 0; }
+            #my_bookmarks .wrapper .article .info .options .right .rating {
+              display: flex; }
+              #my_bookmarks .wrapper .article .info .options .right .rating i {
+                margin-left: 10px;
+                color: #F46036;
+                font-size: .8em; }
+  @media only screen and (max-width: 600px) {
+    #my_bookmarks .wrapper {
+      margin-left: 0; } }
+  @media only screen and (max-width: 1000px) {
+    #my_bookmarks nav {
+      display: none; }
+    #my_bookmarks .wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 0%; }
+      #my_bookmarks .wrapper .article {
+        width: 100%; } }
+  @media only screen and (max-width: 600px) {
+    #my_bookmarks .wrapper .articles {
+      padding-left: 0;
+      padding-right: 0;
+      align-items: center;
+      justify-content: center; }
+      #my_bookmarks .wrapper .articles .article {
+        width: 96%; }
+        #my_bookmarks .wrapper .articles .article .info {
+          padding: 10px; }
+        #my_bookmarks .wrapper .articles .article .title {
+          font-size: .9em; }
+        #my_bookmarks .wrapper .articles .article .description {
+          padding-right: 20px;
+          font-size: .8em; }
+        #my_bookmarks .wrapper .articles .article .options .left .option {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          #my_bookmarks .wrapper .articles .article .options .left .option i {
+            margin-left: 0;
+            margin-bottom: 5px; }
+        #my_bookmarks .wrapper .articles .article .options .right .rating i {
+          font-size: .4em; } }
