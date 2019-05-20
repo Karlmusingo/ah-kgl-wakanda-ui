@@ -619,6 +619,41 @@
 
 		.comments{
 			font-size: 1em !important;
+			
+		}
+	}
+}
+
+.history-btn{
+	text-align: right;
+	a{
+		font-size: .8em;
+	}
+}
+
+.list{
+	transition: .5s all;
+}
+
+.history{
+	font-size: .9em;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	.date{
+		text-align: right;
+	}
+}
+
+.history-btn{
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+	span{
+		font-size: .8em;
+		color:#339CFF;
+		font-weight: bold;
+		&:hover{
+			cursor: pointer;
 		}
 	}
 }

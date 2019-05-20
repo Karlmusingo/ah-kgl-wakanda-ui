@@ -1944,6 +1944,32 @@ a, h1, h2, h3, p, span {
   #single-article .comments {
     font-size: 1em !important; } }
 
+.history-btn {
+  text-align: right; }
+  .history-btn a {
+    font-size: .8em; }
+
+.list {
+  transition: .5s all; }
+
+.history {
+  font-size: .9em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 5px; }
+  .history .date {
+    text-align: right; }
+
+.history-btn {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px; }
+  .history-btn span {
+    font-size: .8em;
+    color: #339CFF;
+    font-weight: bold; }
+    .history-btn span:hover {
+      cursor: pointer; }
+
 .button {
   background: #f46036;
   color: #fafafa;
