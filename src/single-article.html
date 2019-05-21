@@ -272,13 +272,45 @@
 					</div>
 				</div>
 				<div class="comments">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit numquam id nemo corporis alias ipsa
-					quo.
-					Voluptas,
-					dicta recusandae laudantium totam cupiditate saepe vel fuga sunt perspiciatis, blanditiis voluptate
-					numquam!
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit numquam id nemo corporis alias
+						ipsa
+						quo.
+						Voluptas,
+						dicta recusandae laudantium totam cupiditate saepe vel fuga sunt perspiciatis, blanditiis
+						voluptate
+						numquam!
+					</span>
+					<div class="history-btn" id="history-btn"><span>History</span></div>
+					<div class="list" id="list">
+						<div class="history">
+							<div class="text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. s, blanditiis
+								voluptate
+							</div>
+							<div class="date">26 june</div>
+						</div>
+						<div class="history">
+							<div class="text">
+								dicta recusandae laudantium totam cupiditate saepe vel fuga sunt perspiciatis,
+								blanditiis
+								voluptate
+								numquam!
+							</div>
+							<div class="date">25 june</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		<script>
+			const h = document.getElementById('list');
+			document.getElementById('history-btn').addEventListener('click', () => {
+				if (h.style.display == 'block') {
+					h.style.display = 'none';
+				} else {
+					h.style.display = 'block';
+				}
+			});
+		</script>
 </body>
 <html>
