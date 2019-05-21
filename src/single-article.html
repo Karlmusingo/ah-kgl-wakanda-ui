@@ -25,6 +25,7 @@
 						<img src="./img/icons/light-star.png" alt="">
 						<img src="./img/icons/empty-star.png" alt="">
 					</div>
+					<p class="read-time-light">10 min read</p>
 				</div>
 			</div>
 			<div class="col-md-6 title">
@@ -165,6 +166,9 @@
 									</div>
 								</div>
 								<div class="right">
+									<div class="time">
+										<p class="read-time-dark">10 min read</p>
+									</div>
 									<div class="rating">
 										<i class="fas fa-star"></i>
 										<i class="fas fa-star"></i>
@@ -196,6 +200,9 @@
 									</div>
 								</div>
 								<div class="right">
+									<div class="time">
+										<p class="read-time-dark">10 min read</p>
+									</div>
 									<div class="rating">
 										<i class="fas fa-star"></i>
 										<i class="fas fa-star"></i>
@@ -208,35 +215,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="article">
-					<div class="image"></div>
-					<div class="info">
-						<div class="title">Artificial Intelligence in our homes
-							For the next years
-						</div>
-						<div class="options">
-							<div class="left">
-								<div class="option">
-									<i class="far fa-comment-alt"></i>
-									<span class="">245</span>
-								</div>
-								<div class="option">
-									<i class="far fa-thumbs-up"></i>
-									<span class="">245</span>
-								</div>
-							</div>
-							<div class="right">
-								<div class="rating">
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="far fa-star"></i>
-									<i class="far fa-star"></i>
-									<i class="far fa-star"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
 			</div>
 			<form class="form">
 				<label for="comment">Comments</label>
@@ -258,6 +236,10 @@
 					Voluptas,
 					dicta recusandae laudantium totam cupiditate saepe vel fuga sunt perspiciatis, blanditiis voluptate
 					numquam!
+					<div class="option">
+						<i class="far fa-thumbs-up"></i>
+						<span class="">245</span>
+					</div>
 				</div>
 			</div>
 			<br>
@@ -272,14 +254,18 @@
 					</div>
 				</div>
 				<div class="comments">
-					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit numquam id nemo corporis alias
-						ipsa
-						quo.
-						Voluptas,
-						dicta recusandae laudantium totam cupiditate saepe vel fuga sunt perspiciatis, blanditiis
-						voluptate
-						numquam!
-					</span>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit numquam id nemo corporis alias
+					ipsa
+					quo.
+					Voluptas,
+					dicta recusandae laudantium totam cupiditate saepe vel fuga sunt perspiciatis, blanditiis
+					voluptate
+					numquam!
+
+					<div class="option">
+						<i class="far fa-thumbs-up"></i>
+						<span class="">245</span>
+					</div>
 					<div class="history-btn" id="history-btn"><span>History</span></div>
 					<div class="list" id="list">
 						<div class="history">
@@ -301,16 +287,17 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<script>
-			const h = document.getElementById('list');
-			document.getElementById('history-btn').addEventListener('click', () => {
-				if (h.style.display == 'block') {
-					h.style.display = 'none';
-				} else {
-					h.style.display = 'block';
-				}
-			});
-		</script>
+			<script>
+				const h = document.getElementById('list');
+				document.getElementById('history-btn').addEventListener('click', () => {
+					if (h.style.display == 'block') {
+						h.style.display = 'none';
+						h.style.opacity = 0;
+					} else {
+						h.style.display = 'block';
+						h.style.opacity = 1;
+					}
+				});
+			</script>
 </body>
 <html>
